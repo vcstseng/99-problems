@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DEV01 · AI 寫程式很快，但需求沒寫清楚的地方，它是不是自行決定了？ — 99 Problems</title>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+</head>
+<body>
+<header class="site-header site-shell">
+  <a class="brand" href="../../../index.html">
+    <span class="brand-mark">99</span>
+    <span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span>
+  </a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="../../problem-map/index.html">問題地圖</a>
+    <a href="../../methodology/index.html">方法論</a>
+    <a class="lang" href="#" data-lang-toggle>中 / EN</a>
+  </nav>
+</header>
+
+<main class="problem-detail">
+  <a class="problem-back" href="../../problem-map/index.html?group=ai&category=AI-Native%20Development">← 回問題地圖</a>
+
+  <section class="problem-hero">
+    <div>
+      <div class="problem-meta">
+        <span class="meta-pill id">DEV01</span>
+        <span class="meta-pill">AI 原生開發</span>
+      </div>
+      <h1>AI 寫程式很快，但需求沒寫清楚的地方，它是不是自行決定了？</h1>
+      <p class="problem-summary">當Implementation變得極快時，模糊或不完整的需求可能被AI自行補上隱含假設並直接實作；經過多次修改後，這些未經確認的Assumptions還可能讓Code逐步偏離原始Business Intent、Architecture Constraints與Acceptance Criteria</p>
+    </div>
+  </section>
+
+  <div class="detail-stack">
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">01</span><h2>問題是什麼？</h2></div>
+      <div class="detail-body"><p>當Implementation變得極快時，模糊或不完整的需求可能被AI自行補上隱含假設並直接實作；經過多次修改後，這些未經確認的Assumptions還可能讓Code逐步偏離原始Business Intent、Architecture Constraints與Acceptance Criteria</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">02</span><h2>需要知道什麼？</h2></div>
+      <div class="detail-body">
+        <p class="section-explanation">AI Coding 最大的風險之一，是需求沒寫清楚時它自己補完。要把 Requirements、User Story、Business Rule、Acceptance Criteria、Architecture Decision、Assumption、Code 與 Test 放在一起，才能看見哪些地方其實沒被明確決定。</p>
+        <div class="data-split">
+          <div class="data-box"><h3>主要資料</h3><p>Requirements、User Stories、Business Rules、Acceptance Criteria、Architecture Decisions、Assumption Register、Code、Tests與Change History</p></div>
+          <div class="data-box"><h3>既有系統</h3><p>Jira、Confluence、Git、ADR/Product Docs</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section ai-angle">
+      <div class="detail-title"><span class="detail-num">03</span><h2>AI 改變了什麼？</h2></div>
+      <div class="detail-body"><p>AI能快速找出Spec Ambiguity、Conflicts與Missing Cases，但也可能自行補完需求空白；可靠控制不是只讓另一個AI比較Spec與Code，而是先把隱含Assumptions明確化，並盡可能將Intent轉成可執行的Acceptance Criteria、BDD、Contracts或Property Tests。</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">04</span><h2>怎麼解？</h2></div>
+      <div class="detail-body solution-detail">
+        <p class="section-explanation">在寫程式前先找出模糊、衝突、Edge Case 和未明說的假設，要求 Agent 把它們列出來，而不是自行選答案。能形式化的需求再轉成 Acceptance Criteria、BDD、Contract 或 Property Test，持續檢查 Code 是否符合。</p>
+        <div class="solution-core-block">
+          <span class="solution-core-label">Solution Core</span>
+          <p class="solution-core">Assumption Extraction + Executable Specification + Acceptance Criteria + Spec–Code Alignment</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="trio-row">
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">05</span><h2>AI 做什麼？</h2></div>
+        <div class="detail-body"><p>Coding前找出Requirement中的Ambiguity、Conflicts、Edge Cases與未明說的Assumptions，要求Agent明確列出而非自行決定；將可形式化的Intent轉成Acceptance Criteria、BDD、Contracts或Property Tests，並在後續Changes持續檢查Implementation是否仍符合這些Constraints</p></div>
+      </section>
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">06</span><h2>人決定什麼？</h2></div>
+        <div class="detail-body"><p>定義真正Business Intent、優先順序與不可自行假設事項，確認重要Assumptions與Acceptance Criteria，核准Intentional Scope/Design Changes並維護Source of Truth</p></div>
+      </section>
+      <section class="detail-section detail-outcome">
+        <div class="detail-title"><span class="detail-num">07</span><h2>最後改善什麼？</h2></div>
+        <div class="detail-body"><p>降低AI高速實作錯誤假設與Cumulative Intent Drift的風險，讓需求空白在進入Code前被看見並使重要Business Intent具有可驗證的Execution Evidence</p></div>
+      </section>
+    </div>
+  </div>
+
+  <nav class="problem-footer-nav" aria-label="問題導覽">
+    <a href="../VER08/index.html">← VER08　當 AI 已經不能安全繼續時，系統能不能停下來，不要硬做到底？</a>
+    <a class="to-map" href="../../problem-map/index.html?group=ai&category=AI-Native%20Development">回問題地圖</a>
+    <a class="next" href="../DEV02/index.html">DEV02　Codebase 這麼龐大，Coding Agent 真的知道改一個地方會影響哪裡嗎？ →</a>
+  </nav>
+</main>
+
+<script src="../../../data/problems.js"></script>
+<script src="../../../data/extensions.js"></script>
+<script src="../../../assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DEV07 · Every module passed its tests. Why does the integrated system still fail? — 99 Problems</title><link rel="stylesheet" href="../../../assets/css/site.css"></head>
+<body>
+<header class="site-header site-shell"><a class="brand" href="../../../index.html"><span class="brand-mark">99</span><span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span></a><nav class="site-nav" aria-label="Primary"><a href="../../problem-map/index.html">Problem Map</a><a href="../../methodology/index.html">Methodology</a><a class="lang" href="#" data-lang-toggle>中 / EN</a></nav></header>
+<main class="problem-detail">
+<a class="problem-back" href="../../problem-map/index.html?group=ai&category=AI-Native%20Development">← Back to Problem Map</a>
+<section class="problem-hero"><div><div class="problem-meta"><span class="meta-pill id">DEV07</span><span class="meta-pill">AI-Native Development</span></div><h1>Every module passed its tests. Why does the integrated system still fail?</h1><p class="problem-summary">Local tests can all pass while APIs, schemas, consumer expectations, or end-to-end business behavior are incompatible across components.</p></div></section>
+<div class="detail-stack">
+<section class="detail-section"><div class="detail-title"><span class="detail-num">01</span><h2>What's the problem?</h2></div><div class="detail-body"><p>Local tests can all pass while APIs, schemas, consumer expectations, or end-to-end business behavior are incompatible across components.</p></div></section>
+<section class="detail-section"><div class="detail-title"><span class="detail-num">02</span><h2>What do we need to know?</h2></div><div class="detail-body"><p class="section-explanation">Use APIs, schemas, interface contracts, consumer expectations, service dependencies, integration and E2E tests, and the actual change set.</p><div class="data-split"><div class="data-box"><h3>Key inputs</h3><p>APIs, schemas, interface contracts, consumer expectations, integration/E2E tests, service dependencies, change sets</p></div><div class="data-box"><h3>Existing systems</h3><p>API gateway, Git, CI/CD, service catalog, contract-testing tools</p></div></div></div></section>
+<section class="detail-section ai-angle"><div class="detail-title"><span class="detail-num">03</span><h2>What does AI change?</h2></div><div class="detail-body"><p>Deterministic contract and schema tests remain primary controls. AI adds value by spotting semantic mismatches and generating missing cross-component scenarios.</p></div></section>
+<section class="detail-section"><div class="detail-title"><span class="detail-num">04</span><h2>How do we solve it?</h2></div><div class="detail-body solution-detail"><p class="section-explanation">Check formal interface compatibility first, then analyze semantic changes and validate critical user journeys end to end.</p><div class="solution-core-block"><span class="solution-core-label">Solution Core</span><p class="solution-core">Contract Testing + Schema Compatibility + AI-Assisted Integration Scenario Generation + End-to-End Verification</p></div></div></section>
+<div class="trio-row">
+<section class="detail-section"><div class="detail-title"><span class="detail-num">05</span><h2>What does AI do?</h2></div><div class="detail-body"><p>Identify likely cross-component conflicts and propose integration scenarios that existing tests may miss.</p></div></section>
+<section class="detail-section"><div class="detail-title"><span class="detail-num">06</span><h2>What do people decide?</h2></div><div class="detail-body"><p>Define critical system invariants and decide which integration failures block release.</p></div></section>
+<section class="detail-section detail-outcome"><div class="detail-title"><span class="detail-num">07</span><h2>What improves?</h2></div><div class="detail-body"><p>Catch local-success/global-failure problems before release.</p></div></section>
+</div></div>
+<nav class="problem-footer-nav" aria-label="Problem navigation">
+<a href="../DEV06/index.html">← DEV06　If ten coding agents work in parallel, how do we stop them from being locally right and globally wrong?</a>
+<a class="to-map" href="../../problem-map/index.html?group=ai&category=AI-Native%20Development">Back to Problem Map</a>
+<a class="next" href="../DEV09/index.html">DEV09　Should an AI-generated change be allowed to deploy itself all the way to production? →</a>
+</nav></main>
+<script src="../../../data/problems.js"></script><script src="../../../data/extensions.js"></script><script src="../../../assets/js/site.js"></script>
+</body></html>

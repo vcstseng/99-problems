@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DEV06 · 十個 Coding Agent 同時工作，怎麼確保不是各自做對、合起來做錯？ — 99 Problems</title>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+</head>
+<body>
+<header class="site-header site-shell">
+  <a class="brand" href="../../../index.html">
+    <span class="brand-mark">99</span>
+    <span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span>
+  </a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="../../problem-map/index.html">問題地圖</a>
+    <a href="../../methodology/index.html">方法論</a>
+    <a class="lang" href="#" data-lang-toggle>中 / EN</a>
+  </nav>
+</header>
+
+<main class="problem-detail">
+  <a class="problem-back" href="../../problem-map/index.html?group=ai&category=AI-Native%20Development">← 回問題地圖</a>
+
+  <section class="problem-hero">
+    <div>
+      <div class="problem-meta">
+        <span class="meta-pill id">DEV06</span>
+        <span class="meta-pill">AI 原生開發</span>
+      </div>
+      <h1>十個 Coding Agent 同時工作，怎麼確保不是各自做對、合起來做錯？</h1>
+      <p class="problem-summary">多個Development Agents平行工作時，可能各自在自己的Task與Branch內做出合理修改，卻對Shared Architecture、Interfaces、Ownership與Assumptions形成彼此不相容的決定</p>
+    </div>
+  </section>
+
+  <div class="detail-stack">
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">01</span><h2>問題是什麼？</h2></div>
+      <div class="detail-body"><p>多個Development Agents平行工作時，可能各自在自己的Task與Branch內做出合理修改，卻對Shared Architecture、Interfaces、Ownership與Assumptions形成彼此不相容的決定</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">02</span><h2>需要知道什麼？</h2></div>
+      <div class="detail-body">
+        <p class="section-explanation">多個 Coding Agent 同時開工時，要知道每個 Agent 負責哪個 Task、Module 或 File，彼此依賴什麼 Interface Contract、Architecture Decision 和共享假設。否則每個人都局部做對，Merge 時還是可能互相衝突。</p>
+        <div class="data-split">
+          <div class="data-box"><h3>主要資料</h3><p>Agent Tasks、Module/File Ownership、Branch Changes、Interface Contracts、Architecture Decisions、Dependencies、Shared Assumptions與Merge State</p></div>
+          <div class="data-box"><h3>既有系統</h3><p>Git、Issue Tracker、Agent Orchestrator、Merge Queue</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section ai-angle">
+      <div class="detail-title"><span class="detail-num">03</span><h2>AI 改變了什麼？</h2></div>
+      <div class="detail-body"><p>Multi-Agent Development仍屬Early；真正困難的不只是Git Conflict，而是Agents對Interfaces與Architecture產生不相容的Semantic Assumptions。現階段較可靠的控制是明確Module Ownership、Isolated Workspaces、Shared Interface Contracts與Merge Gates，AI Coordination只作為Dependency與Conflict Detection的輔助。</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">04</span><h2>怎麼解？</h2></div>
+      <div class="detail-body solution-detail">
+        <p class="section-explanation">先劃分 Work Ownership 和相依關係，讓 Agent 在隔離的 Branch／Workspace 工作，並共享已核准的 Interface Contract 與 Architecture Decision。Merge 前再檢查重疊 Change、Dependency Conflict 和不相容假設。</p>
+        <div class="solution-core-block">
+          <span class="solution-core-label">Solution Core</span>
+          <p class="solution-core">Work Ownership + Isolated Workspaces + Shared Interface Contracts + Multi-Agent Coordination + Merge Gates</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="trio-row">
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">05</span><h2>AI 做什麼？</h2></div>
+        <div class="detail-body"><p>依Module/File與Task Dependencies劃分Agent Work Boundaries，在隔離Branch/Workspace中執行Changes並共享已核准的Architecture Decisions與Interface Contracts；在Merge前檢查Overlapping Changes、Dependency Conflicts與Incompatible Assumptions</p></div>
+      </section>
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">06</span><h2>人決定什麼？</h2></div>
+        <div class="detail-body"><p>設定Architecture、Priority、Ownership與Shared Contracts，處理Agents無法自行協調的Semantic Conflicts與重大Cross-System Design Decisions</p></div>
+      </section>
+      <section class="detail-section detail-outcome">
+        <div class="detail-title"><span class="detail-num">07</span><h2>最後改善什麼？</h2></div>
+        <div class="detail-body"><p>在保留平行開發速度的同時降低Agents各自局部合理、整體卻因不相容Assumptions而失敗的協調風險</p></div>
+      </section>
+    </div>
+  </div>
+
+  <nav class="problem-footer-nav" aria-label="問題導覽">
+    <a href="../DEV05/index.html">← DEV05　Agent 會不會為了讓測試通過，自己把「成功標準」放寬？</a>
+    <a class="to-map" href="../../problem-map/index.html?group=ai&category=AI-Native%20Development">回問題地圖</a>
+    <a class="next" href="../DEV07/index.html">DEV07　每個模組都測試通過，合起來為什麼還是壞？ →</a>
+  </nav>
+</main>
+
+<script src="../../../data/problems.js"></script>
+<script src="../../../data/extensions.js"></script>
+<script src="../../../assets/js/site.js"></script>
+</body>
+</html>

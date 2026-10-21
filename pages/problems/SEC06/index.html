@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SEC06 · 一個 Agent 被攻破，會不會沿著信任關係一路影響其他 Agent？ — 99 Problems</title>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+</head>
+<body>
+<header class="site-header site-shell">
+  <a class="brand" href="../../../index.html">
+    <span class="brand-mark">99</span>
+    <span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span>
+  </a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="../../problem-map/index.html">問題地圖</a>
+    <a href="../../methodology/index.html">方法論</a>
+    <a class="lang" href="#" data-lang-toggle>中 / EN</a>
+  </nav>
+</header>
+
+<main class="problem-detail">
+  <a class="problem-back" href="../../problem-map/index.html?group=ai&category=Security">← 回問題地圖</a>
+
+  <section class="problem-hero">
+    <div>
+      <div class="problem-meta">
+        <span class="meta-pill id">SEC06</span>
+        <span class="meta-pill">安全</span>
+      </div>
+      <h1>一個 Agent 被攻破，會不會沿著信任關係一路影響其他 Agent？</h1>
+      <p class="problem-summary">多Agent系統中，一個遭操縱或Compromised Agent的自然語言輸出可能被其他Agents當成Instruction、Evidence或Delegated Request，再透過共享Memory、Tools與權限鏈向外擴散</p>
+    </div>
+  </section>
+
+  <div class="detail-stack">
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">01</span><h2>問題是什麼？</h2></div>
+      <div class="detail-body"><p>多Agent系統中，一個遭操縱或Compromised Agent的自然語言輸出可能被其他Agents當成Instruction、Evidence或Delegated Request，再透過共享Memory、Tools與權限鏈向外擴散</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">02</span><h2>需要知道什麼？</h2></div>
+      <div class="detail-body">
+        <p class="section-explanation">多 Agent 系統裡，一個 Agent 的輸出常會被另一個 Agent 當成輸入。要先看清楚 Agent 身份、訊息來源、Delegation Chain、共享記憶、工具權限與彼此信任關係，才能知道攻擊會怎麼傳播。</p>
+        <div class="data-split">
+          <div class="data-box"><h3>主要資料</h3><p>Agent Identities、Messages、Delegation Graph、Message Provenance、Shared Memory、Tool Permissions與Trust Relationships</p></div>
+          <div class="data-box"><h3>既有系統</h3><p>Agent Platform、Message Bus、IAM、MCP</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section ai-angle">
+      <div class="detail-title"><span class="detail-num">03</span><h2>AI 改變了什麼？</h2></div>
+      <div class="detail-body"><p>傳統Service-to-Service Interface通常具有較明確的Schema與Trust Boundary；多Agent系統可能把自然語言輸出直接作為另一個Agent的Context或Instruction，使Compromise沿信任鏈傳播。此類攻擊與偵測仍屬Early，主要控制應是Isolation與Explicit Trust Boundaries而非依賴語意偵測。</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">04</span><h2>怎麼解？</h2></div>
+      <div class="detail-body solution-detail">
+        <p class="section-explanation">把每個 Agent 的身份、記憶與工具權限隔離，跨 Agent 訊息都保留來源與委派鏈，不讓其他 Agent 自動把外部輸出當成可信指令。發現異常傳播或權限跳躍時，要能快速停止 Delegation 並隔離來源。</p>
+        <div class="solution-core-block">
+          <span class="solution-core-label">Solution Core</span>
+          <p class="solution-core">Agent Isolation + Explicit Trust Boundaries + Message Provenance + Least Privilege + Propagation Containment</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="trio-row">
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">05</span><h2>AI 做什麼？</h2></div>
+        <div class="detail-body"><p>隔離Agent的Identity、Memory與Tool Permissions，標記跨Agent訊息的來源與Delegation Chain，避免其他Agents自動把外部Agent輸出視為可信Instruction；偵測異常權限跳躍或傳播時支援快速隔離與停止Delegation</p></div>
+      </section>
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">06</span><h2>人決定什麼？</h2></div>
+        <div class="detail-body"><p>定義Agent-to-Agent Trust、可委派Authority、共享資料範圍與Emergency Shutdown Authority，決定何時隔離Agent或整條Delegation Chain</p></div>
+      </section>
+      <section class="detail-section detail-outcome">
+        <div class="detail-title"><span class="detail-num">07</span><h2>最後改善什麼？</h2></div>
+        <div class="detail-body"><p>限制單一Agent Compromise沿共享Context、Tools與Delegation關係擴散，降低Cascading Compromise的Blast Radius</p></div>
+      </section>
+    </div>
+  </div>
+
+  <nav class="problem-footer-nav" aria-label="問題導覽">
+    <a href="../SEC05/index.html">← SEC05　AI 如果記錯一次，會不會把錯誤或惡意內容一直當成真的？</a>
+    <a class="to-map" href="../../problem-map/index.html?group=ai&category=Security">回問題地圖</a>
+    <a class="next" href="../SEC07/index.html">SEC07　AI 出事時，我們看得出它做過什麼、停得下來、還原得回來嗎？ →</a>
+  </nav>
+</main>
+
+<script src="../../../data/problems.js"></script>
+<script src="../../../data/extensions.js"></script>
+<script src="../../../assets/js/site.js"></script>
+</body>
+</html>

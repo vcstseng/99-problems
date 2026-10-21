@@ -1,0 +1,31 @@
+{
+  "_note": "Counts are placeholders in this shell. Replace with the frozen dataset-derived counts before production.",
+  "business": [
+    "Sales",
+    "Marketing",
+    "Finance",
+    "HR",
+    "Procurement",
+    "Operations",
+    "Customer Service",
+    "Supply Chain",
+    "Legal / Compliance",
+    "Management"
+  ],
+  "ai_era": [
+    "Security",
+    "Governance",
+    "Reliability & Verification",
+    "AI-Native Development",
+    "Human × AI Collaboration"
+  ],
+  "systemic": [
+    "Synthetic Consensus",
+    "Moral Laundering",
+    "Self-Fulfilling Prediction",
+    "Recursive Institutional Memory",
+    "Local Optimization, Global Harm",
+    "Human Adaptation to AI",
+    "Cumulative Strategic Drift"
+  ]
+}

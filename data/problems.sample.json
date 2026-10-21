@@ -1,0 +1,41 @@
+{
+  "_note": "Replace / extend with the frozen 99 Problems master data. This shell intentionally contains sample records only.",
+  "fields": [
+    "ID",
+    "Category",
+    "Plain Language",
+    "Business Problem",
+    "Data Needed / Existing Systems",
+    "AI Leverage",
+    "Solution Core",
+    "How AI Helps",
+    "Human Role",
+    "Expected Outcome"
+  ],
+  "records": [
+    {
+      "ID": "S01",
+      "Category": "Sales",
+      "Plain Language": "市場接下來到底會買多少？",
+      "Business Problem": "市場需求難以準確預測，導致銷售目標與資源配置容易偏離實際市場。",
+      "Data Needed / Existing Systems": "歷史銷售、Pipeline、庫存、促銷行事曆、季節性與外部市場訊號｜CRM、ERP、WMS、DWH/BI、外部資料源",
+      "AI Leverage": "傳統統計預測對穩定歷史序列已有成熟方法；AI/ML 的額外價值在於整合大量外部與多變數訊號、處理新品或稀疏資料並持續更新 Forecast。",
+      "Solution Core": "Demand Forecasting + External Signal Integration + Scenario Analysis",
+      "How AI Helps": "整合歷史銷售、市場訊號、產品與外部因素預測未來需求，並在明確假設下比較不同市場與銷售情境。",
+      "Human Role": "判斷市場假設、選擇銷售策略並決定資源配置。",
+      "Expected Outcome": "提高預測準確度，提早發現銷售落差並改善資源配置。"
+    },
+    {
+      "ID": "S02",
+      "Category": "Sales",
+      "Plain Language": "市場上這麼多客戶，我們到底該先賣給誰？",
+      "Business Problem": "銷售資源有限，但企業難以從大量潛在客戶中判斷哪些帳戶最值得優先投入開發時間。",
+      "Data Needed / Existing Systems": "客戶公司屬性、歷史成交/失單、互動紀錄、網站行為與第三方 Intent Signals｜CRM、Lead DB、Marketing Automation、Web Analytics",
+      "AI Leverage": "AI/ML 可整合 Firmographic、互動與 Intent 建立動態優先級，NLP/LLM 可從非結構化描述與互動中抽取特徵並協助處理資料不一致。",
+      "Solution Core": "Account Prioritization + Propensity Modeling + Fit/Intent Scoring",
+      "How AI Helps": "整合公司屬性、產業、歷史成交、互動行為、產品適配度與需求訊號，建立帳戶優先級並說明主要判斷依據。",
+      "Human Role": "Sales 決定目標市場、關係策略與高價值例外，並檢查模型是否過度複製既有客群與歷史銷售模式。",
+      "Expected Outcome": "把有限業務時間集中在更值得開發的客戶，提高有效接觸率與開發效率。"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>99 Problems</title></head>
+<body>
+<script>
+const id = new URLSearchParams(location.search).get('id') || 'S01';
+location.replace(encodeURIComponent(id) + '/index.html');
+</script>
+<noscript><a href="S01/index.html">前往 S01</a></noscript>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>O05 · 每天一堆異常，哪一個真的需要現在處理？ — 99 Problems</title>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+</head>
+<body>
+<header class="site-header site-shell">
+  <a class="brand" href="../../../index.html">
+    <span class="brand-mark">99</span>
+    <span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span>
+  </a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="../../problem-map/index.html">問題地圖</a>
+    <a href="../../methodology/index.html">方法論</a>
+    <a class="lang" href="#" data-lang-toggle>中 / EN</a>
+  </nav>
+</header>
+
+<main class="problem-detail">
+  <a class="problem-back" href="../../problem-map/index.html?group=business&category=Operations">← 回問題地圖</a>
+
+  <section class="problem-hero">
+    <div>
+      <div class="problem-meta">
+        <span class="meta-pill id">O05</span>
+        <span class="meta-pill">營運</span>
+      </div>
+      <h1>每天一堆異常，哪一個真的需要現在處理？</h1>
+      <p class="problem-summary">營運系統持續產生大量異常、告警與例外，其中許多彼此相關或影響有限，管理者難以快速判斷哪些事件會造成最大的業務影響並需要立即介入</p>
+    </div>
+  </section>
+
+  <div class="detail-stack">
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">01</span><h2>問題是什麼？</h2></div>
+      <div class="detail-body"><p>營運系統持續產生大量異常、告警與例外，其中許多彼此相關或影響有限，管理者難以快速判斷哪些事件會造成最大的業務影響並需要立即介入</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">02</span><h2>需要知道什麼？</h2></div>
+      <div class="detail-body">
+        <p class="section-explanation">大量告警真正麻煩的不是數量，而是同一件事可能產生很多訊號，而且每個異常對客戶、訂單、資產與流程的影響不同。要把告警、Incident、歷史處理結果和業務關鍵度一起看。</p>
+        <div class="data-split">
+          <div class="data-box"><h3>主要資料</h3><p>告警、Exceptions、Incident、異常KPI、歷史處理結果、資產/流程關鍵度、訂單/客戶影響與Runbooks</p></div>
+          <div class="data-box"><h3>既有系統</h3><p>Monitoring、MES/ERP、ITSM、BI/Operations Dashboard</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section ai-angle">
+      <div class="detail-title"><span class="detail-num">03</span><h2>AI 改變了什麼？</h2></div>
+      <div class="detail-body"><p>固定Threshold容易造成告警疲勞；AI可將相關異常去重與分組，連結歷史Incident、業務影響與處理紀錄進行優先排序，但低優先順序不代表無風險，仍需保留抽樣檢查與升級機制。</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">04</span><h2>怎麼解？</h2></div>
+      <div class="detail-body solution-detail">
+        <p class="section-explanation">先把屬於同一事件的告警去重、分組，再依受影響的客戶、訂單、資產與歷史結果估算業務影響。系統排序需要立即處理的事件，並附上相似 Incident 與 Runbook，讓人快速判斷。</p>
+        <div class="solution-core-block">
+          <span class="solution-core-label">Solution Core</span>
+          <p class="solution-core">Exception Clustering + Business Impact Scoring + Incident/Runbook Retrieval + Priority Ranking</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="trio-row">
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">05</span><h2>AI 做什麼？</h2></div>
+        <div class="detail-body"><p>將同一事件造成的多個告警與例外聚合，結合受影響的客戶、訂單、資產、流程與歷史結果評估業務影響，排序需要立即處理的事件並提供相關Incident與Runbook證據</p></div>
+      </section>
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">06</span><h2>人決定什麼？</h2></div>
+        <div class="detail-body"><p>Operations驗證高風險例外與現場情境，決定介入方式與升級條件，並定期抽查低優先事件以避免排序模型造成系統性漏報</p></div>
+      </section>
+      <section class="detail-section detail-outcome">
+        <div class="detail-title"><span class="detail-num">07</span><h2>最後改善什麼？</h2></div>
+        <div class="detail-body"><p>降低告警疲勞與重複調查，把有限管理注意力集中於真正高影響且時間敏感的營運異常</p></div>
+      </section>
+    </div>
+  </div>
+
+  <nav class="problem-footer-nav" aria-label="問題導覽">
+    <a href="../O04/index.html">← O04　現場一直插單、延誤、臨時變更，排程怎麼跟得上？</a>
+    <a class="to-map" href="../../problem-map/index.html?group=business&category=Operations">回問題地圖</a>
+    <a class="next" href="../CS01/index.html">CS01　產品還沒上線，客服能不能先知道客戶最可能遇到什麼問題？ →</a>
+  </nav>
+</main>
+
+<script src="../../../data/problems.js"></script>
+<script src="../../../data/extensions.js"></script>
+<script src="../../../assets/js/site.js"></script>
+</body>
+</html>

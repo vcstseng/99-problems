@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SEC01 · Can someone hide instructions in a document, email, or web page and take control of the AI? — 99 Problems</title><link rel="stylesheet" href="../../../assets/css/site.css"></head>
+<body>
+<header class="site-header site-shell"><a class="brand" href="../../../index.html"><span class="brand-mark">99</span><span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span></a><nav class="site-nav" aria-label="Primary"><a href="../../problem-map/index.html">Problem Map</a><a href="../../methodology/index.html">Methodology</a><a class="lang" href="#" data-lang-toggle>中 / EN</a></nav></header>
+<main class="problem-detail">
+<a class="problem-back" href="../../problem-map/index.html?group=ai&category=Security">← Back to Problem Map</a>
+<section class="problem-hero"><div><div class="problem-meta"><span class="meta-pill id">SEC01</span><span class="meta-pill">Security</span></div><h1>Can someone hide instructions in a document, email, or web page and take control of the AI?</h1><p class="problem-summary">AI systems can consume untrusted content that contains hidden instructions, creating a path for prompt injection to alter behavior or trigger unsafe actions.</p></div></section>
+<div class="detail-stack">
+<section class="detail-section"><div class="detail-title"><span class="detail-num">01</span><h2>What's the problem?</h2></div><div class="detail-body"><p>AI systems can consume untrusted content that contains hidden instructions, creating a path for prompt injection to alter behavior or trigger unsafe actions.</p></div></section>
+<section class="detail-section"><div class="detail-title"><span class="detail-num">02</span><h2>What do we need to know?</h2></div><div class="detail-body"><p class="section-explanation">Trace where prompts, email, documents, web content, and retrieved context come from, and distinguish trusted instructions from untrusted data before the model sees them.</p><div class="data-split"><div class="data-box"><h3>Key inputs</h3><p>User prompts, email, documents, web content, RAG context, content provenance, agent traces, tool calls</p></div><div class="data-box"><h3>Existing systems</h3><p>LLM gateway, RAG, email, browser, DMS</p></div></div></div></section>
+<section class="detail-section ai-angle"><div class="detail-title"><span class="detail-num">03</span><h2>What does AI change?</h2></div><div class="detail-body"><p>The model itself cannot reliably decide which text is an instruction and which is merely data. Security therefore depends on isolation, least privilege, provenance, and runtime enforcement around the model.</p></div></section>
+<section class="detail-section"><div class="detail-title"><span class="detail-num">04</span><h2>How do we solve it?</h2></div><div class="detail-body solution-detail"><p class="section-explanation">Separate trusted instructions from untrusted content, detect suspicious prompt patterns, constrain tool access, and enforce policies outside the model before actions can execute.</p><div class="solution-core-block"><span class="solution-core-label">Solution Core</span><p class="solution-core">Trusted/Untrusted Context Isolation + Prompt Injection Detection + Least Privilege + Runtime Policy Enforcement</p></div></div></section>
+<div class="trio-row">
+<section class="detail-section"><div class="detail-title"><span class="detail-num">05</span><h2>What does AI do?</h2></div><div class="detail-body"><p>Interpret content within a controlled context and surface suspicious instruction patterns without being trusted as the final security boundary.</p></div></section>
+<section class="detail-section"><div class="detail-title"><span class="detail-num">06</span><h2>What do people decide?</h2></div><div class="detail-body"><p>Define trust boundaries, sensitive actions, and incident response rules.</p></div></section>
+<section class="detail-section detail-outcome"><div class="detail-title"><span class="detail-num">07</span><h2>What improves?</h2></div><div class="detail-body"><p>Reduce the chance that malicious content can redirect an AI system into unsafe behavior.</p></div></section>
+</div></div>
+<nav class="problem-footer-nav" aria-label="Problem navigation">
+<a href="../MG05/index.html">← MG05　Why did we make that decision, what happened afterward, and what did we actually learn?</a>
+<a class="to-map" href="../../problem-map/index.html?group=ai&category=Security">Back to Problem Map</a>
+<a class="next" href="../SEC02/index.html">SEC02　Can AI see, infer, or leak data it was never supposed to know? →</a>
+</nav></main>
+<script src="../../../data/problems.js"></script><script src="../../../data/extensions.js"></script><script src="../../../assets/js/site.js"></script>
+</body></html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SEC03 · AI 有了工具權限後，會不會被騙去做「有權做、但現在不該做」的事？ — 99 Problems</title>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+</head>
+<body>
+<header class="site-header site-shell">
+  <a class="brand" href="../../../index.html">
+    <span class="brand-mark">99</span>
+    <span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span>
+  </a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="../../problem-map/index.html">問題地圖</a>
+    <a href="../../methodology/index.html">方法論</a>
+    <a class="lang" href="#" data-lang-toggle>中 / EN</a>
+  </nav>
+</header>
+
+<main class="problem-detail">
+  <a class="problem-back" href="../../problem-map/index.html?group=ai&category=Security">← 回問題地圖</a>
+
+  <section class="problem-hero">
+    <div>
+      <div class="problem-meta">
+        <span class="meta-pill id">SEC03</span>
+        <span class="meta-pill">安全</span>
+      </div>
+      <h1>AI 有了工具權限後，會不會被騙去做「有權做、但現在不該做」的事？</h1>
+      <p class="problem-summary">Agent即使擁有合法API與Tool Permissions，也可能因Prompt Injection、Context污染或錯誤判斷，在合法權限範圍內執行不符合使用者意圖或企業政策的高影響Action</p>
+    </div>
+  </section>
+
+  <div class="detail-stack">
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">01</span><h2>問題是什麼？</h2></div>
+      <div class="detail-body"><p>Agent即使擁有合法API與Tool Permissions，也可能因Prompt Injection、Context污染或錯誤判斷，在合法權限範圍內執行不符合使用者意圖或企業政策的高影響Action</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">02</span><h2>需要知道什麼？</h2></div>
+      <div class="detail-body">
+        <p class="section-explanation">AI 有工具權限後，問題不只是「能不能做」，而是「此時此刻、這個對象、這個金額到底該不該做」。因此要同時知道 Tool 權限、Action 參數、Identity、金額、目的地和歷史核准紀錄。</p>
+        <div class="data-split">
+          <div class="data-box"><h3>主要資料</h3><p>Tool Permissions、API Schemas、Action Parameters、Identity、Amount/Destination、Agent Traces、Transaction Logs與Approval History</p></div>
+          <div class="data-box"><h3>既有系統</h3><p>IAM、Policy Engine、ERP、CRM、Payment、Email、Cloud APIs</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section ai-angle">
+      <div class="detail-title"><span class="detail-num">03</span><h2>AI 改變了什麼？</h2></div>
+      <div class="detail-body"><p>傳統IAM主要回答「這個Identity能不能呼叫API」，但Agent還需要判斷「這個Context下能不能執行這個Action」。LLM可以提出Action與Risk Signal，但同一模型或另一個LLM Guardrail仍可能被操縱，高影響執行限制必須由模型之外的Deterministic Policy Enforcement控制。</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">04</span><h2>怎麼解？</h2></div>
+      <div class="detail-body solution-detail">
+        <p class="section-explanation">Agent 只提出想做的 Action，不自行決定是否允許。外部 Policy Engine 依操作類型、金額、對象、身份與風險限制做 Allow／Block／Escalate，高影響操作再要求額外驗證或人工核准。</p>
+        <div class="solution-core-block">
+          <span class="solution-core-label">Solution Core</span>
+          <p class="solution-core">Context-Aware Authorization + Deterministic Policy Enforcement + Least Privilege + Human Approval</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="trio-row">
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">05</span><h2>AI 做什麼？</h2></div>
+        <div class="detail-body"><p>Agent提出欲執行的Action與必要Context，再由外部Policy Engine依Action Type、Amount、Destination、Identity與Risk Limits進行Allow/Block/Escalate，高影響操作要求額外驗證或Human Approval</p></div>
+      </section>
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">06</span><h2>人決定什麼？</h2></div>
+        <div class="detail-body"><p>定義Agent Authority、Action Limits、Allowlist、不可自動執行行為與Approval Thresholds，對高影響Actions保留最終授權與Accountability</p></div>
+      </section>
+      <section class="detail-section detail-outcome">
+        <div class="detail-title"><span class="detail-num">07</span><h2>最後改善什麼？</h2></div>
+        <div class="detail-body"><p>降低Prompt Injection或模型錯誤利用合法Tool Permissions造成的錯誤交易、資料外傳與其他高影響非授權行為</p></div>
+      </section>
+    </div>
+  </div>
+
+  <nav class="problem-footer-nav" aria-label="問題導覽">
+    <a href="../SEC02/index.html">← SEC02　AI 會不會看到、拼湊出或洩漏它本來不該知道的資料？</a>
+    <a class="to-map" href="../../problem-map/index.html?group=ai&category=Security">回問題地圖</a>
+    <a class="next" href="../SEC04/index.html">SEC04　MCP、Plugin、Skill 裝進來後，怎麼確認現在安全、更新後也安全？ →</a>
+  </nav>
+</main>
+
+<script src="../../../data/problems.js"></script>
+<script src="../../../data/extensions.js"></script>
+<script src="../../../assets/js/site.js"></script>
+</body>
+</html>

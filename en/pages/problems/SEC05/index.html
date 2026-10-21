@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SEC05 · If AI remembers something wrong once, can that bad memory keep becoming &#x27;true&#x27;? — 99 Problems</title><link rel="stylesheet" href="../../../assets/css/site.css"></head>
+<body>
+<header class="site-header site-shell"><a class="brand" href="../../../index.html"><span class="brand-mark">99</span><span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span></a><nav class="site-nav" aria-label="Primary"><a href="../../problem-map/index.html">Problem Map</a><a href="../../methodology/index.html">Methodology</a><a class="lang" href="#" data-lang-toggle>中 / EN</a></nav></header>
+<main class="problem-detail">
+<a class="problem-back" href="../../problem-map/index.html?group=ai&category=Security">← Back to Problem Map</a>
+<section class="problem-hero"><div><div class="problem-meta"><span class="meta-pill id">SEC05</span><span class="meta-pill">Security</span></div><h1>If AI remembers something wrong once, can that bad memory keep becoming &#x27;true&#x27;?</h1><p class="problem-summary">Persistent agent memory can preserve false, outdated, or malicious information and repeatedly reintroduce it into future decisions.</p></div></section>
+<div class="detail-stack">
+<section class="detail-section"><div class="detail-title"><span class="detail-num">01</span><h2>What's the problem?</h2></div><div class="detail-body"><p>Persistent agent memory can preserve false, outdated, or malicious information and repeatedly reintroduce it into future decisions.</p></div></section>
+<section class="detail-section"><div class="detail-title"><span class="detail-num">02</span><h2>What do we need to know?</h2></div><div class="detail-body"><p class="section-explanation">Track every memory record with source, trust level, identity, timestamp, write event, version, and relationship to authoritative knowledge sources.</p><div class="data-split"><div class="data-box"><h3>Key inputs</h3><p>Memory records, conversation history, source provenance, trust level, user identity, timestamps, write events, RAG stores, knowledge sources</p></div><div class="data-box"><h3>Existing systems</h3><p>Vector DB, knowledge base, agent memory, DMS</p></div></div></div></section>
+<section class="detail-section ai-angle"><div class="detail-title"><span class="detail-num">03</span><h2>What does AI change?</h2></div><div class="detail-body"><p>Long-term memory makes errors durable. Reliable memory therefore needs provenance, write controls, expiry, versioning, and quarantine rather than treating every model-generated fact as permanent.</p></div></section>
+<section class="detail-section"><div class="detail-title"><span class="detail-num">04</span><h2>How do we solve it?</h2></div><div class="detail-body solution-detail"><p class="section-explanation">Gate what can be written to memory, preserve source lineage, expire or version uncertain content, and quarantine suspicious writes until reviewed.</p><div class="solution-core-block"><span class="solution-core-label">Solution Core</span><p class="solution-core">Memory Provenance + Trust-Based Write Gates + Versioning + Expiration + Quarantine</p></div></div></section>
+<div class="trio-row">
+<section class="detail-section"><div class="detail-title"><span class="detail-num">05</span><h2>What does AI do?</h2></div><div class="detail-body"><p>Propose memories and retrieve prior context, while carrying source and trust metadata forward.</p></div></section>
+<section class="detail-section"><div class="detail-title"><span class="detail-num">06</span><h2>What do people decide?</h2></div><div class="detail-body"><p>Define what is worth remembering, which sources are authoritative, and when disputed memory must be corrected or removed.</p></div></section>
+<section class="detail-section detail-outcome"><div class="detail-title"><span class="detail-num">07</span><h2>What improves?</h2></div><div class="detail-body"><p>Keep persistent memory useful without allowing one bad inference to contaminate future work indefinitely.</p></div></section>
+</div></div>
+<nav class="problem-footer-nav" aria-label="Problem navigation">
+<a href="../SEC04/index.html">← SEC04　Once an MCP server, plugin, or skill is installed, how do we know it is still safe after an update?</a>
+<a class="to-map" href="../../problem-map/index.html?group=ai&category=Security">Back to Problem Map</a>
+<a class="next" href="../SEC06/index.html">SEC06　If one agent is compromised, can the problem spread through the rest of the agent network? →</a>
+</nav></main>
+<script src="../../../data/problems.js"></script><script src="../../../data/extensions.js"></script><script src="../../../assets/js/site.js"></script>
+</body></html>

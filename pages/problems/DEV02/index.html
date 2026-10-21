@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DEV02 · Codebase 這麼龐大，Coding Agent 真的知道改一個地方會影響哪裡嗎？ — 99 Problems</title>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+</head>
+<body>
+<header class="site-header site-shell">
+  <a class="brand" href="../../../index.html">
+    <span class="brand-mark">99</span>
+    <span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span>
+  </a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="../../problem-map/index.html">問題地圖</a>
+    <a href="../../methodology/index.html">方法論</a>
+    <a class="lang" href="#" data-lang-toggle>中 / EN</a>
+  </nav>
+</header>
+
+<main class="problem-detail">
+  <a class="problem-back" href="../../problem-map/index.html?group=ai&category=AI-Native%20Development">← 回問題地圖</a>
+
+  <section class="problem-hero">
+    <div>
+      <div class="problem-meta">
+        <span class="meta-pill id">DEV02</span>
+        <span class="meta-pill">AI 原生開發</span>
+      </div>
+      <h1>Codebase 這麼龐大，Coding Agent 真的知道改一個地方會影響哪裡嗎？</h1>
+      <p class="problem-summary">AI Coding Agent即使找到語意上相關的Code，也可能漏掉Runtime Configuration、Types、Schemas、Cross-Repo Dependencies、Reflection或其他不容易從文字相似度發現的Structural Dependencies，造成局部修改產生非預期影響</p>
+    </div>
+  </section>
+
+  <div class="detail-stack">
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">01</span><h2>問題是什麼？</h2></div>
+      <div class="detail-body"><p>AI Coding Agent即使找到語意上相關的Code，也可能漏掉Runtime Configuration、Types、Schemas、Cross-Repo Dependencies、Reflection或其他不容易從文字相似度發現的Structural Dependencies，造成局部修改產生非預期影響</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">02</span><h2>需要知道什麼？</h2></div>
+      <div class="detail-body">
+        <p class="section-explanation">大型 Codebase 裡，一個小改動可能跨 Repository、API、Schema、Runtime Config 和相依模組。要同時看 Code、Call Graph、Type／Dependency Graph、Test、Architecture Doc 與歷史變更，不能只把幾個相關檔案丟給 Agent。</p>
+        <div class="data-split">
+          <div class="data-box"><h3>主要資料</h3><p>Code、Call Graph、Type/Dependency Graph、Runtime Config、APIs、Schemas、Tests、Cross-Repo Dependencies、Architecture Docs與Historical Changes</p></div>
+          <div class="data-box"><h3>既有系統</h3><p>Git、IDE、Code Search、Static Analysis、Architecture Repository</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section ai-angle">
+      <div class="detail-title"><span class="detail-num">03</span><h2>AI 改變了什麼？</h2></div>
+      <div class="detail-body"><p>AI適合從大型Repository理解Task Context與搜尋語意相關資訊，但Semantic Retrieval與Context Window不能證明Dependency完整性；Call Graph、Type Checking、Dependency Analysis、Schema/Contract Validation與Test-Impact Analysis等Deterministic Developer Tools應提供Structural Facts。</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">04</span><h2>怎麼解？</h2></div>
+      <div class="detail-body solution-detail">
+        <p class="section-explanation">先用語意搜尋找出和任務相關的 Code 與歷史脈絡，再用 Call Graph、Type／Dependency、Schema／Contract 和 Test Impact 做確定性檢查。最後組成 Task-specific Context，讓 Agent 知道能改哪裡、可能影響哪裡。</p>
+        <div class="solution-core-block">
+          <span class="solution-core-label">Solution Core</span>
+          <p class="solution-core">Semantic Repository Intelligence + Deterministic Dependency Analysis + Task-Specific Context</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="trio-row">
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">05</span><h2>AI 做什麼？</h2></div>
+        <div class="detail-body"><p>先以語意搜尋找出與Task相關的Code、Architecture Decisions與Historical Context，再呼叫Call Graph、Type/Dependency Analysis、Schema/Contract與Test-Impact工具確認Structural Dependencies，組成Task-Specific Context供Agent修改與驗證</p></div>
+      </section>
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">06</span><h2>人決定什麼？</h2></div>
+        <div class="detail-body"><p>維護Architecture Constraints與關鍵System Boundaries，處理工具無法發現的Undocumented、Runtime或Business Dependencies，並核准重大Design Changes</p></div>
+      </section>
+      <section class="detail-section detail-outcome">
+        <div class="detail-title"><span class="detail-num">07</span><h2>最後改善什麼？</h2></div>
+        <div class="detail-body"><p>降低Agent因Context Retrieval遺漏或只理解局部Code而造成的Unexpected System Impact，使修改前的Impact Analysis更完整</p></div>
+      </section>
+    </div>
+  </div>
+
+  <nav class="problem-footer-nav" aria-label="問題導覽">
+    <a href="../DEV01/index.html">← DEV01　AI 寫程式很快，但需求沒寫清楚的地方，它是不是自行決定了？</a>
+    <a class="to-map" href="../../problem-map/index.html?group=ai&category=AI-Native%20Development">回問題地圖</a>
+    <a class="next" href="../DEV03/index.html">DEV03　AI 寫程式比人 Review 還快，人到底還該 Review 什麼？ →</a>
+  </nav>
+</main>
+
+<script src="../../../data/problems.js"></script>
+<script src="../../../data/extensions.js"></script>
+<script src="../../../assets/js/site.js"></script>
+</body>
+</html>

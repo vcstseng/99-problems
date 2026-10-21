@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DEV04 · 同一個 AI 寫程式又寫測試，全部綠燈真的代表做對了嗎？ — 99 Problems</title>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+</head>
+<body>
+<header class="site-header site-shell">
+  <a class="brand" href="../../../index.html">
+    <span class="brand-mark">99</span>
+    <span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span>
+  </a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="../../problem-map/index.html">問題地圖</a>
+    <a href="../../methodology/index.html">方法論</a>
+    <a class="lang" href="#" data-lang-toggle>中 / EN</a>
+  </nav>
+</header>
+
+<main class="problem-detail">
+  <a class="problem-back" href="../../problem-map/index.html?group=ai&category=AI-Native%20Development">← 回問題地圖</a>
+
+  <section class="problem-hero">
+    <div>
+      <div class="problem-meta">
+        <span class="meta-pill id">DEV04</span>
+        <span class="meta-pill">AI 原生開發</span>
+      </div>
+      <h1>同一個 AI 寫程式又寫測試，全部綠燈真的代表做對了嗎？</h1>
+      <p class="problem-summary">AI同時產生Implementation與Tests時可能共享相同錯誤假設；即使改用另一個模型產生Tests，也可能因訓練資料與推理模式相近而形成相關盲點，使全部Tests通過卻沒有真正獨立驗證</p>
+    </div>
+  </section>
+
+  <div class="detail-stack">
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">01</span><h2>問題是什麼？</h2></div>
+      <div class="detail-body"><p>AI同時產生Implementation與Tests時可能共享相同錯誤假設；即使改用另一個模型產生Tests，也可能因訓練資料與推理模式相近而形成相關盲點，使全部Tests通過卻沒有真正獨立驗證</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">02</span><h2>需要知道什麼？</h2></div>
+      <div class="detail-body">
+        <p class="section-explanation">同一個 AI 同時寫 Code 和 Test，容易出現兩邊一起誤解需求、最後卻全部綠燈的情況。需要獨立的 Requirements、Human-defined Invariants、Contracts、Historical Bugs、Reference Behavior 與 Held-out Tests。</p>
+        <div class="data-split">
+          <div class="data-box"><h3>主要資料</h3><p>Code、Tests、Requirements、Human-Defined Invariants、Contracts、Historical Bugs、Reference Behavior、Hidden Tests與Mutation Results</p></div>
+          <div class="data-box"><h3>既有系統</h3><p>Git、CI/CD、Test Framework、Mutation Testing Tools</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section ai-angle">
+      <div class="detail-title"><span class="detail-num">03</span><h2>AI 改變了什麼？</h2></div>
+      <div class="detail-body"><p>AI適合大量產生Tests，但不同模型不等於Independent Evidence；更可靠的驗證應來自不同資訊來源，例如Human-Defined Invariants、Executable Specs、Contracts、Existing System Behavior與Held-Out Tests，並用Mutation Testing直接測量Tests是否真的能抓到故意注入的錯誤。</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">04</span><h2>怎麼解？</h2></div>
+      <div class="detail-body solution-detail">
+        <p class="section-explanation">測試證據要盡量獨立於實作本身。用 Property／Contract Tests、Held-out Cases 和歷史 Bug 建立外部檢查，再透過 Mutation Testing 故意注入錯誤，確認現有 Test 真的抓得到問題。</p>
+        <div class="solution-core-block">
+          <span class="solution-core-label">Solution Core</span>
+          <p class="solution-core">Independent Test Evidence + Mutation Testing + Property/Contract Testing + Deterministic Quality Gates</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="trio-row">
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">05</span><h2>AI 做什麼？</h2></div>
+        <div class="detail-body"><p>從Requirements、Invariants、Contracts、Historical Bugs與Reference Behavior建立獨立Test Evidence，使用Property/Contract Tests與Held-Out Cases降低Implementation/Test同源風險，並透過Mutation Testing故意注入Faults，檢查現有Tests是否真的能偵測錯誤</p></div>
+      </section>
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">06</span><h2>人決定什麼？</h2></div>
+        <div class="detail-body"><p>定義Critical Invariants、Authoritative Specifications與不可妥協的Quality Gates，維護不受Implementation Generator控制的Independent/Held-Out Test Evidence</p></div>
+      </section>
+      <section class="detail-section detail-outcome">
+        <div class="detail-title"><span class="detail-num">07</span><h2>最後改善什麼？</h2></div>
+        <div class="detail-body"><p>降低Code與Tests共享同一錯誤假設卻全部綠燈造成的虛假信心，讓Test Quality本身也能被實際驗證</p></div>
+      </section>
+    </div>
+  </div>
+
+  <nav class="problem-footer-nav" aria-label="問題導覽">
+    <a href="../DEV03/index.html">← DEV03　AI 寫程式比人 Review 還快，人到底還該 Review 什麼？</a>
+    <a class="to-map" href="../../problem-map/index.html?group=ai&category=AI-Native%20Development">回問題地圖</a>
+    <a class="next" href="../DEV05/index.html">DEV05　Agent 會不會為了讓測試通過，自己把「成功標準」放寬？ →</a>
+  </nav>
+</main>
+
+<script src="../../../data/problems.js"></script>
+<script src="../../../data/extensions.js"></script>
+<script src="../../../assets/js/site.js"></script>
+</body>
+</html>

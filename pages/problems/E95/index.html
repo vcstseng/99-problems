@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>E95 · 如果 AI 的預測會改變人的行動，那最後看到的證據會不會只是自己影響出來的結果？ — 99 Problems</title>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+</head>
+<body>
+<header class="site-header site-shell">
+  <a class="brand" href="../../../index.html">
+    <span class="brand-mark">99</span>
+    <span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span>
+  </a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="../../problem-map/index.html">問題地圖</a>
+    <a href="../../methodology/index.html">方法論</a>
+    <a class="lang" href="#" data-lang-toggle>中 / EN</a>
+  </nav>
+</header>
+
+<main class="problem-detail">
+  <a class="problem-back" href="../../problem-map/index.html?group=system&category=System%20Effects">← 回問題地圖</a>
+
+  <section class="problem-hero">
+    <div>
+      <div class="problem-meta">
+        <span class="meta-pill id">E95</span>
+        <span class="meta-pill">系統性後果</span>
+      </div>
+      <h1>如果 AI 的預測會改變人的行動，那最後看到的證據會不會只是自己影響出來的結果？</h1>
+      <p class="problem-summary">預測系統會影響資源配置與人的行動，而這些行動又會改變後續結果與訓練資料，形成「預測 → 行動 → 結果 → 再學習」的閉環。久而久之，模型可能把自己介入造成的結果，誤認成對世界本來樣子的準確描述。</p>
+    </div>
+  </section>
+
+  <div class="detail-stack">
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">01</span><h2>問題是什麼？</h2></div>
+      <div class="detail-body"><p>預測系統會影響資源配置與人的行動，而這些行動又會改變後續結果與訓練資料，形成「預測 → 行動 → 結果 → 再學習」的閉環。久而久之，模型可能把自己介入造成的結果，誤認成對世界本來樣子的準確描述。</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">02</span><h2>需要知道什麼？</h2></div>
+      <div class="detail-body">
+        <p class="section-explanation">當模型分數會改變誰被接觸、誰拿到資源、誰看到推薦時，後來觀察到的 Outcome 已經不是自然發生。要把 Prediction、Downstream Action、Exposure／Treatment、Outcome、Training Data 和版本一起追蹤。</p>
+        <div class="data-split">
+          <div class="data-box"><h3>主要資料</h3><p>Predictions、Scores、Downstream Actions、Resource Allocation、Exposure／Treatment、Outcomes、Training Data、Model Versions</p></div>
+          <div class="data-box"><h3>既有系統</h3><p>CRM、Recommendation Engine、Decision System、Experiment Platform、ML Logs</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section ai-angle">
+      <div class="detail-title"><span class="detail-num">03</span><h2>AI 改變了什麼？</h2></div>
+      <div class="detail-body"><p>一般預測往往假設觀察到的結果主要來自外部世界；但當模型本身決定誰得到機會、曝光或服務時，資料生成機制已經被模型改變。AI/ML 可以協助偵測回饋循環，但要區分預測與介入效果，仍需要因果方法。</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">04</span><h2>怎麼解？</h2></div>
+      <div class="detail-body solution-detail">
+        <p class="section-explanation">建立 Feedback Loop 追蹤，區分自然結果和模型介入後造成的結果。透過 Holdout、Exploration、反事實評估或因果分析，檢查模型是不是正在用自己影響出來的資料證明自己。</p>
+        <div class="solution-core-block">
+          <span class="solution-core-label">Solution Core</span>
+          <p class="solution-core">Feedback-Loop Detection + Exploration Policy + Counterfactual / Causal Evaluation</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="trio-row">
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">05</span><h2>AI 做什麼？</h2></div>
+        <div class="detail-body"><p>追蹤預測如何影響後續行動，區分自然發生的結果與模型介入後的結果，利用保留組、探索機制、反事實評估或因果分析，檢查模型是否正在用自己造成的結果驗證自己。</p></div>
+      </section>
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">06</span><h2>人決定什麼？</h2></div>
+        <div class="detail-body"><p>決定哪些情境必須保留探索樣本、哪些族群不能只依分數分配機會，以及何時需要刻意打破模型形成的回饋循環。</p></div>
+      </section>
+      <section class="detail-section detail-outcome">
+        <div class="detail-title"><span class="detail-num">07</span><h2>最後改善什麼？</h2></div>
+        <div class="detail-body"><p>降低模型把自身介入結果誤認成客觀證據的風險，保留發現錯誤假設的機會；無法完全消除回饋循環，但可以刻意保留反事實比較。</p></div>
+      </section>
+    </div>
+  </div>
+
+  <nav class="problem-footer-nav" aria-label="問題導覽">
+    <a href="../E94/index.html">← E94　如果有個決定，人自己都不願意做，為什麼變成「模型建議」後就可以做？</a>
+    <a class="to-map" href="../../problem-map/index.html?group=system&category=System%20Effects">回問題地圖</a>
+    <a class="next" href="../E96/index.html">E96　如果公司一直引用 AI 當初的解讀，最後這個解讀會不會變成「歷史事實」？ →</a>
+  </nav>
+</main>
+
+<script src="../../../data/problems.js"></script>
+<script src="../../../data/extensions.js"></script>
+<script src="../../../assets/js/site.js"></script>
+</body>
+</html>

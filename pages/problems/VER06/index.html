@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>VER06 · AI 說自己很有把握，這個「有把握」真的可信嗎？ — 99 Problems</title>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+</head>
+<body>
+<header class="site-header site-shell">
+  <a class="brand" href="../../../index.html">
+    <span class="brand-mark">99</span>
+    <span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span>
+  </a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="../../problem-map/index.html">問題地圖</a>
+    <a href="../../methodology/index.html">方法論</a>
+    <a class="lang" href="#" data-lang-toggle>中 / EN</a>
+  </nav>
+</header>
+
+<main class="problem-detail">
+  <a class="problem-back" href="../../problem-map/index.html?group=ai&category=Reliability%20%26%20Verification">← 回問題地圖</a>
+
+  <section class="problem-hero">
+    <div>
+      <div class="problem-meta">
+        <span class="meta-pill id">VER06</span>
+        <span class="meta-pill">可靠性與驗證</span>
+      </div>
+      <h1>AI 說自己很有把握，這個「有把握」真的可信嗎？</h1>
+      <p class="problem-summary">LLM對自身Confidence的表達未必與實際正確率一致，尤其在Open-Ended Reasoning中可能對證據不足或錯誤結果表現出高度確信，使使用者與Downstream Agents缺乏可靠的Uncertainty Signal</p>
+    </div>
+  </section>
+
+  <div class="detail-stack">
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">01</span><h2>問題是什麼？</h2></div>
+      <div class="detail-body"><p>LLM對自身Confidence的表達未必與實際正確率一致，尤其在Open-Ended Reasoning中可能對證據不足或錯誤結果表現出高度確信，使使用者與Downstream Agents缺乏可靠的Uncertainty Signal</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">02</span><h2>需要知道什麼？</h2></div>
+      <div class="detail-body">
+        <p class="section-explanation">AI 說「很有把握」本身不夠。要看 Evidence 是否完整、來源是否一致、Verifier 是否通過、重跑結果會不會大幅不同，以及過去類似訊號和實際錯誤率的關係。</p>
+        <div class="data-split">
+          <div class="data-box"><h3>主要資料</h3><p>Retrieval Quality、Evidence Completeness、Source Agreement、Verifier Results、Repeated-Sample Results、Historical Error Rates、Task Labels與Distribution Signals</p></div>
+          <div class="data-box"><h3>既有系統</h3><p>Agent Platform、Evaluation Store、RAG、Monitoring</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section ai-angle">
+      <div class="detail-title"><span class="detail-num">03</span><h2>AI 改變了什麼？</h2></div>
+      <div class="detail-body"><p>模型自述Confidence不能直接視為錯誤機率；較可靠的Uncertainty需要結合Evidence Completeness、Source Agreement、Independent Verification、Historical Calibration與Repeated-Sample Disagreement。Classification/Extraction等任務可使用較嚴謹的Calibration方法，但Open-Ended Generation仍缺乏通用可靠的Confidence Measure。</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">04</span><h2>怎麼解？</h2></div>
+      <div class="detail-body solution-detail">
+        <p class="section-explanation">針對不同任務建立可觀測的 Uncertainty Signals，把證據品質、來源一致性、Verifier 結果、重複執行分歧和歷史錯誤率一起評估。最後把這些訊號交給 Governance 與 Fallback Policy 決定下一步。</p>
+        <div class="solution-core-block">
+          <span class="solution-core-label">Solution Core</span>
+          <p class="solution-core">Observable Uncertainty Signals + Task-Specific Calibration + Evidence Quality + Disagreement Analysis</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="trio-row">
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">05</span><h2>AI 做什麼？</h2></div>
+        <div class="detail-body"><p>針對不同Task建立可觀測的Uncertainty Signals，量測Evidence是否完整、來源是否一致、Verifier是否通過、重複執行是否產生重大分歧，以及歷史上相似Signal與實際錯誤率的關係，將這些訊號提供給後續Governance與Fallback Policy使用</p></div>
+      </section>
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">06</span><h2>人決定什麼？</h2></div>
+        <div class="detail-body"><p>定義不同Task需要的可靠性標準與可接受Uncertainty，確認哪些Signals足以支援自動處理、Verification或進一步治理，而不把模型自述Confidence當成客觀機率</p></div>
+      </section>
+      <section class="detail-section detail-outcome">
+        <div class="detail-title"><span class="detail-num">07</span><h2>最後改善什麼？</h2></div>
+        <div class="detail-body"><p>讓企業更可靠地辨識哪些AI Output值得信任、哪些需要額外驗證，降低模型過度自信被誤當成品質證明的風險</p></div>
+      </section>
+    </div>
+  </div>
+
+  <nav class="problem-footer-nav" aria-label="問題導覽">
+    <a href="../VER05/index.html">← VER05　如果是另一個 AI 在評分，誰來確認這個裁判可靠？</a>
+    <a class="to-map" href="../../problem-map/index.html?group=ai&category=Reliability%20%26%20Verification">回問題地圖</a>
+    <a class="next" href="../VER07/index.html">VER07　昨天還能用，換了模型、Prompt 或 Tool 後，今天怎麼悄悄壞掉了？ →</a>
+  </nav>
+</main>
+
+<script src="../../../data/problems.js"></script>
+<script src="../../../data/extensions.js"></script>
+<script src="../../../assets/js/site.js"></script>
+</body>
+</html>

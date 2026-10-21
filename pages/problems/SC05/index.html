@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SC05 · 每天訂單量都不同，物流中心各時段到底需要多少人、怎麼排班？ — 99 Problems</title>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+</head>
+<body>
+<header class="site-header site-shell">
+  <a class="brand" href="../../../index.html">
+    <span class="brand-mark">99</span>
+    <span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span>
+  </a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="../../problem-map/index.html">問題地圖</a>
+    <a href="../../methodology/index.html">方法論</a>
+    <a class="lang" href="#" data-lang-toggle>中 / EN</a>
+  </nav>
+</header>
+
+<main class="problem-detail">
+  <a class="problem-back" href="../../problem-map/index.html?group=business&category=Supply%20Chain">← 回問題地圖</a>
+
+  <section class="problem-hero">
+    <div>
+      <div class="problem-meta">
+        <span class="meta-pill id">SC05</span>
+        <span class="meta-pill">供應鏈</span>
+      </div>
+      <h1>每天訂單量都不同，物流中心各時段到底需要多少人、怎麼排班？</h1>
+      <p class="problem-summary">物流中心的Inbound、Outbound與不同作業區工作量會以小時級波動，且人員受到技能、班次、出勤與勞動規則限制，使管理者難以在出貨Deadline前配置足夠人力又避免大量Overtime與Idle Capacity</p>
+    </div>
+  </section>
+
+  <div class="detail-stack">
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">01</span><h2>問題是什麼？</h2></div>
+      <div class="detail-body"><p>物流中心的Inbound、Outbound與不同作業區工作量會以小時級波動，且人員受到技能、班次、出勤與勞動規則限制，使管理者難以在出貨Deadline前配置足夠人力又避免大量Overtime與Idle Capacity</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">02</span><h2>需要知道什麼？</h2></div>
+      <div class="detail-body">
+        <p class="section-explanation">物流中心的人力需求會隨時段、訂單量、SKU 組合、Cutoff 與處理速度改變。除了預測工作量，還要知道各工作站容量、技能、班次、出勤與勞動規則，否則排班只會是平均分配。</p>
+        <div class="data-split">
+          <div class="data-box"><h3>主要資料</h3><p>Inbound/Outbound Volume、SKU Profile、Cutoff、歷史處理速度、Workstation Capacity、技能、班次、Attendance與勞動規則</p></div>
+          <div class="data-box"><h3>既有系統</h3><p>WMS、WFM、ERP</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section ai-angle">
+      <div class="detail-title"><span class="detail-num">03</span><h2>AI 改變了什麼？</h2></div>
+      <div class="detail-body"><p>小時級Workload Forecast與排班最佳化已有成熟方法；AI/ML的增量在於整合訂單結構、SKU Profile與缺勤等訊號預測各工作區短期負荷與可用Capacity，再由Constraint Scheduling依技能、班次、休息與工時規則產生可行配置。</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">04</span><h2>怎麼解？</h2></div>
+      <div class="detail-body solution-detail">
+        <p class="section-explanation">先預測每個時段和工作區的 Inbound／Outbound Workload，再找可能的 Capacity Bottleneck。最後把技能、班次、休息、工時與出勤限制交給排班最佳化模型，比較不同排班與跨區調度方案。</p>
+        <div class="solution-core-block">
+          <span class="solution-core-label">Solution Core</span>
+          <p class="solution-core">Hourly Workload Forecasting + Capacity Prediction + Constraint-Based Workforce Scheduling</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="trio-row">
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">05</span><h2>AI 做什麼？</h2></div>
+        <div class="detail-body"><p>預測各時段與工作區的Inbound/Outbound Workload及可用人力，辨識可能形成的Capacity Bottleneck，再將技能、Shift、Attendance、休息與工時限制交由最佳化模型比較班次與跨區調度方案</p></div>
+      </section>
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">06</span><h2>人決定什麼？</h2></div>
+        <div class="detail-body"><p>Logistics Manager設定Service Level、技能與勞動規則，處理臨時缺勤、安全與現場例外，並確認最終排班符合適用的勞動規範</p></div>
+      </section>
+      <section class="detail-section detail-outcome">
+        <div class="detail-title"><span class="detail-num">07</span><h2>最後改善什麼？</h2></div>
+        <div class="detail-body"><p>降低Overtime、Idle Capacity與局部人力短缺，提高Labor Utilization、出貨準時率與物流中心Throughput</p></div>
+      </section>
+    </div>
+  </div>
+
+  <nav class="problem-footer-nav" aria-label="問題導覽">
+    <a href="../SC04/index.html">← SC04　這裡賣不掉、那裡又缺貨，到底是真的沒需求，還是庫存放錯地方？</a>
+    <a class="to-map" href="../../problem-map/index.html?group=business&category=Supply%20Chain">回問題地圖</a>
+    <a class="next" href="../SC06/index.html">SC06　貨物出貨後，哪一票最可能延誤？要不要現在換路線、換貨運業者或提前處理？ →</a>
+  </nav>
+</main>
+
+<script src="../../../data/problems.js"></script>
+<script src="../../../data/extensions.js"></script>
+<script src="../../../assets/js/site.js"></script>
+</body>
+</html>

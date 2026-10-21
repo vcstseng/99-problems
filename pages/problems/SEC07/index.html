@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SEC07 · AI 出事時，我們看得出它做過什麼、停得下來、還原得回來嗎？ — 99 Problems</title>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+</head>
+<body>
+<header class="site-header site-shell">
+  <a class="brand" href="../../../index.html">
+    <span class="brand-mark">99</span>
+    <span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span>
+  </a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="../../problem-map/index.html">問題地圖</a>
+    <a href="../../methodology/index.html">方法論</a>
+    <a class="lang" href="#" data-lang-toggle>中 / EN</a>
+  </nav>
+</header>
+
+<main class="problem-detail">
+  <a class="problem-back" href="../../problem-map/index.html?group=ai&category=Security">← 回問題地圖</a>
+
+  <section class="problem-hero">
+    <div>
+      <div class="problem-meta">
+        <span class="meta-pill id">SEC07</span>
+        <span class="meta-pill">安全</span>
+      </div>
+      <h1>AI 出事時，我們看得出它做過什麼、停得下來、還原得回來嗎？</h1>
+      <p class="problem-summary">如果企業沒有為 AI 建立足夠的監控與復原設計，安全事件發生後，可能無法重建 Agent 讀過哪些資料、呼叫哪些工具、修改哪些記憶、執行哪些外部操作，也很難及時隔離與復原。</p>
+    </div>
+  </section>
+
+  <div class="detail-stack">
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">01</span><h2>問題是什麼？</h2></div>
+      <div class="detail-body"><p>如果企業沒有為 AI 建立足夠的監控與復原設計，安全事件發生後，可能無法重建 Agent 讀過哪些資料、呼叫哪些工具、修改哪些記憶、執行哪些外部操作，也很難及時隔離與復原。</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">02</span><h2>需要知道什麼？</h2></div>
+      <div class="detail-body">
+        <p class="section-explanation">AI 出事後能不能處理，取決於平常有沒有留下足夠紀錄。要能串起 Prompt、檢索來源、模型／Prompt／Policy 版本、Tool Call、外部 Action、Memory Write、身份與網路紀錄，才能重建事情經過。</p>
+        <div class="data-split">
+          <div class="data-box"><h3>主要資料</h3><p>Prompts/Inputs、Retrieved Sources、Responses、Agent State、Tool Calls/Results、External Actions、Model/Prompt/Policy Version、Identity、Memory Writes與Network Logs</p></div>
+          <div class="data-box"><h3>既有系統</h3><p>SIEM、SOAR、Agent Platform、LLM Gateway</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section ai-angle">
+      <div class="detail-title"><span class="detail-num">03</span><h2>AI 改變了什麼？</h2></div>
+      <div class="detail-body"><p>傳統Security Logs通常只能看到API、帳號與Network活動，無法完整重建Agent可觀測的Execution Chain；模型內部Reasoning本身不可作為可靠Audit Record，因此應記錄可觀測的Inputs、Retrievals、Tool Calls、Actions與State Changes。Telemetry本身可能含敏感資料，也需要Access、Masking與Retention Controls。</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">04</span><h2>怎麼解？</h2></div>
+      <div class="detail-body solution-detail">
+        <p class="section-explanation">先建立完整的 AI Security Observability 和執行紀錄。事件發生時可以撤權、隔離 Agent、停止後續操作、還原可版本化狀態；無法直接 Rollback 的外部操作，則啟動事先設計好的補償措施。</p>
+        <div class="solution-core-block">
+          <span class="solution-core-label">Solution Core</span>
+          <p class="solution-core">AI Security Observability + Execution Trace + Containment + Compensating Actions + Recovery</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="trio-row">
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">05</span><h2>AI 做什麼？</h2></div>
+        <div class="detail-body"><p>記錄並關聯 Agent 的輸入、檢索來源、Model／Prompt／Policy 版本、工具呼叫、外部操作與記憶寫入，重建可觀測的執行紀錄；事件發生時可撤銷權限、隔離 Agent、停止後續操作、還原可版本化狀態，或執行補償措施。</p></div>
+      </section>
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">06</span><h2>人決定什麼？</h2></div>
+        <div class="detail-body"><p>判斷事件嚴重度與影響範圍，啟動隔離、法律／合規通報與復原；事先定義哪些操作可以還原、哪些只能補償，以及安全紀錄的存取與保留政策。</p></div>
+      </section>
+      <section class="detail-section detail-outcome">
+        <div class="detail-title"><span class="detail-num">07</span><h2>最後改善什麼？</h2></div>
+        <div class="detail-body"><p>縮短 AI 安全事件的偵測、調查、隔離與復原時間，降低影響範圍，並保留足以追查事件與改善控制的可觀測證據。</p></div>
+      </section>
+    </div>
+  </div>
+
+  <nav class="problem-footer-nav" aria-label="問題導覽">
+    <a href="../SEC06/index.html">← SEC06　一個 Agent 被攻破，會不會沿著信任關係一路影響其他 Agent？</a>
+    <a class="to-map" href="../../problem-map/index.html?group=ai&category=Security">回問題地圖</a>
+    <a class="next" href="../GOV01/index.html">GOV01　公司到底有多少 AI 在未經核准下運作？它們各自能碰什麼、做什麼？ →</a>
+  </nav>
+</main>
+
+<script src="../../../data/problems.js"></script>
+<script src="../../../data/extensions.js"></script>
+<script src="../../../assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>VER05 · 如果是另一個 AI 在評分，誰來確認這個裁判可靠？ — 99 Problems</title>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+</head>
+<body>
+<header class="site-header site-shell">
+  <a class="brand" href="../../../index.html">
+    <span class="brand-mark">99</span>
+    <span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span>
+  </a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="../../problem-map/index.html">問題地圖</a>
+    <a href="../../methodology/index.html">方法論</a>
+    <a class="lang" href="#" data-lang-toggle>中 / EN</a>
+  </nav>
+</header>
+
+<main class="problem-detail">
+  <a class="problem-back" href="../../problem-map/index.html?group=ai&category=Reliability%20%26%20Verification">← 回問題地圖</a>
+
+  <section class="problem-hero">
+    <div>
+      <div class="problem-meta">
+        <span class="meta-pill id">VER05</span>
+        <span class="meta-pill">可靠性與驗證</span>
+      </div>
+      <h1>如果是另一個 AI 在評分，誰來確認這個裁判可靠？</h1>
+      <p class="problem-summary">LLM-as-a-Judge可能受到Position、Verbosity、Model-Family Preference等偏誤影響，並與被評估模型共享相同盲點與Failure Modes，使多個AI評分看似一致卻不代表存在獨立Evidence</p>
+    </div>
+  </section>
+
+  <div class="detail-stack">
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">01</span><h2>問題是什麼？</h2></div>
+      <div class="detail-body"><p>LLM-as-a-Judge可能受到Position、Verbosity、Model-Family Preference等偏誤影響，並與被評估模型共享相同盲點與Failure Modes，使多個AI評分看似一致卻不代表存在獨立Evidence</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">02</span><h2>需要知道什麼？</h2></div>
+      <div class="detail-body">
+        <p class="section-explanation">如果用另一個 AI 當裁判，就要像管理任何測量工具一樣驗證它。需要 Human Label、Gold Set、Rubric、Deterministic Test、不同 Judge 的分數與版本，才能知道它到底準不準、偏在哪裡。</p>
+        <div class="data-split">
+          <div class="data-box"><h3>主要資料</h3><p>Model Outputs、Judge Scores、Rubrics、Human Labels、Gold Sets、Deterministic Test Results、Disagreement Cases與Judge Version</p></div>
+          <div class="data-box"><h3>既有系統</h3><p>Evaluation Platform、Annotation Tools、CI/Evaluation Store</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section ai-angle">
+      <div class="detail-title"><span class="detail-num">03</span><h2>AI 改變了什麼？</h2></div>
+      <div class="detail-body"><p>AI Evaluator可以大量評估非結構化Output，但Probabilistic Judge不能被直接當成Ground Truth；可靠使用需要以Human-Labeled Gold Set、Deterministic Tests、Bias Tests與Inter-Rater Agreement持續校準，並監控Judge Model更新後的Drift。</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">04</span><h2>怎麼解？</h2></div>
+      <div class="detail-body solution-detail">
+        <p class="section-explanation">用代表性的人工標註案例和確定性測試校準 Evaluator，分析不同 Judge 的一致與分歧，再測試位置、篇幅與 Model Family 造成的偏差。Judge 版本改了，就重新校準，不把它當成永遠正確的標準。</p>
+        <div class="solution-core-block">
+          <span class="solution-core-label">Solution Core</span>
+          <p class="solution-core">Evaluator Calibration + Gold-Set Validation + Bias Testing + Independent Checks</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="trio-row">
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">05</span><h2>AI 做什麼？</h2></div>
+        <div class="detail-body"><p>以代表性的Human-Labeled Cases與Deterministic Tests測量Evaluator Accuracy與Bias，分析不同Judges之間的Agreement與Disagreement，測試Position、Verbosity與Model-Family Effects，並在Judge版本變更後重新校準</p></div>
+      </section>
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">06</span><h2>人決定什麼？</h2></div>
+        <div class="detail-body"><p>建立Gold Standard與Evaluation Rubric，裁決高爭議案例，決定Evaluator可接受誤差與哪些高風險結果不能只靠AI Judge放行</p></div>
+      </section>
+      <section class="detail-section detail-outcome">
+        <div class="detail-title"><span class="detail-num">07</span><h2>最後改善什麼？</h2></div>
+        <div class="detail-body"><p>避免「AI替AI打分」或多個共享盲點的Judges形成虛假品質保證，使Automated Evaluation本身也受到可量測與可驗證的品質控制</p></div>
+      </section>
+    </div>
+  </div>
+
+  <nav class="problem-footer-nav" aria-label="問題導覽">
+    <a href="../VER03/index.html">← VER03　AI 做了很多步驟，中間哪一步出錯？錯誤已經影響到哪裡？</a>
+    <a class="to-map" href="../../problem-map/index.html?group=ai&category=Reliability%20%26%20Verification">回問題地圖</a>
+    <a class="next" href="../VER06/index.html">VER06　AI 說自己很有把握，這個「有把握」真的可信嗎？ →</a>
+  </nav>
+</main>
+
+<script src="../../../data/problems.js"></script>
+<script src="../../../data/extensions.js"></script>
+<script src="../../../assets/js/site.js"></script>
+</body>
+</html>

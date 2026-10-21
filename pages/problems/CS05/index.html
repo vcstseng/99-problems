@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CS05 · 工程師出發前，能不能先知道可能壞哪裡、要帶哪些零件、這次大概要修多久？ — 99 Problems</title>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+</head>
+<body>
+<header class="site-header site-shell">
+  <a class="brand" href="../../../index.html">
+    <span class="brand-mark">99</span>
+    <span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span>
+  </a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="../../problem-map/index.html">問題地圖</a>
+    <a href="../../methodology/index.html">方法論</a>
+    <a class="lang" href="#" data-lang-toggle>中 / EN</a>
+  </nav>
+</header>
+
+<main class="problem-detail">
+  <a class="problem-back" href="../../problem-map/index.html?group=business&category=Customer%20Service">← 回問題地圖</a>
+
+  <section class="problem-hero">
+    <div>
+      <div class="problem-meta">
+        <span class="meta-pill id">CS05</span>
+        <span class="meta-pill">客服</span>
+      </div>
+      <h1>工程師出發前，能不能先知道可能壞哪裡、要帶哪些零件、這次大概要修多久？</h1>
+      <p class="problem-summary">Field Service案件資訊常只有客戶描述、錯誤碼與有限設備資訊，工程師到場後才發現技能不符、缺少零件或實際工時超出預期，造成二次出勤、SLA延誤與低First-Time Fix Rate</p>
+    </div>
+  </section>
+
+  <div class="detail-stack">
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">01</span><h2>問題是什麼？</h2></div>
+      <div class="detail-body"><p>Field Service案件資訊常只有客戶描述、錯誤碼與有限設備資訊，工程師到場後才發現技能不符、缺少零件或實際工時超出預期，造成二次出勤、SLA延誤與低First-Time Fix Rate</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">02</span><h2>需要知道什麼？</h2></div>
+      <div class="detail-body">
+        <p class="section-explanation">工程師出發前如果只看到一句客戶描述，常常無法知道故障在哪裡、要帶什麼零件、需要什麼技能或要修多久。需要把錯誤碼、設備型號、歷史工單、維修結果、零件與實際工時放在一起看。</p>
+        <div class="data-split">
+          <div class="data-box"><h3>主要資料</h3><p>客戶問題描述、Error Codes、設備型號/配置、Asset History、歷史Work Orders、故障原因、使用零件、Resolution與實際工時</p></div>
+          <div class="data-box"><h3>既有系統</h3><p>FSM、CMMS、CRM、IoT/Device Logs、Parts/Inventory System</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section ai-angle">
+      <div class="detail-title"><span class="detail-num">03</span><h2>AI 改變了什麼？</h2></div>
+      <div class="detail-body"><p>Dispatch與Routing已有成熟FSM/OR方法；AI/LLM的增量在於理解非結構化工單與設備歷史，檢索相似故障案例並預測可能Failure Mode、所需Skills/Parts與Repair Duration，讓後續派工使用更完整的Job Requirements。</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">04</span><h2>怎麼解？</h2></div>
+      <div class="detail-body solution-detail">
+        <p class="section-explanation">先理解客戶描述與設備狀態，再找相似維修案例，預測可能故障、所需技能、零件與維修時間。這些 Job Requirements 再交給既有 FSM 做派工與排程，提高一次修好的機率。</p>
+        <div class="solution-core-block">
+          <span class="solution-core-label">Solution Core</span>
+          <p class="solution-core">Work Order Understanding + Similar-Case Retrieval + Failure/Parts Prediction + Repair Duration Estimation</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="trio-row">
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">05</span><h2>AI 做什麼？</h2></div>
+        <div class="detail-body"><p>解析客戶描述、錯誤碼與設備歷史，找出相似維修案例與Resolution，預測可能故障、需要的技能與零件及預估維修時間，再將Job Requirements提供給既有FSM進行派工與排程</p></div>
+      </section>
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">06</span><h2>人決定什麼？</h2></div>
+        <div class="detail-body"><p>Service Manager與工程師驗證故障假設、技能與零件需求，處理安全與特殊設備情境；FSM負責最終派工與路線最佳化</p></div>
+      </section>
+      <section class="detail-section detail-outcome">
+        <div class="detail-title"><span class="detail-num">07</span><h2>最後改善什麼？</h2></div>
+        <div class="detail-body"><p>提高First-Time Fix Rate，減少因帶錯零件、技能不符與工時估計錯誤造成的二次出勤、SLA延誤與服務成本</p></div>
+      </section>
+    </div>
+  </div>
+
+  <nav class="problem-footer-nav" aria-label="問題導覽">
+    <a href="../CS04/index.html">← CS04　這些看起來不同的客訴，會不會其實都是同一個產品或流程問題？</a>
+    <a class="to-map" href="../../problem-map/index.html?group=business&category=Customer%20Service">回問題地圖</a>
+    <a class="next" href="../CS06/index.html">CS06　哪些 B2B 客戶的關係已出現風險？哪些訊號值得 CSM 現在注意？ →</a>
+  </nav>
+</main>
+
+<script src="../../../data/problems.js"></script>
+<script src="../../../data/extensions.js"></script>
+<script src="../../../assets/js/site.js"></script>
+</body>
+</html>

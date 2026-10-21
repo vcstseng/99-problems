@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SEC04 · Once an MCP server, plugin, or skill is installed, how do we know it is still safe after an update? — 99 Problems</title><link rel="stylesheet" href="../../../assets/css/site.css"></head>
+<body>
+<header class="site-header site-shell"><a class="brand" href="../../../index.html"><span class="brand-mark">99</span><span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span></a><nav class="site-nav" aria-label="Primary"><a href="../../problem-map/index.html">Problem Map</a><a href="../../methodology/index.html">Methodology</a><a class="lang" href="#" data-lang-toggle>中 / EN</a></nav></header>
+<main class="problem-detail">
+<a class="problem-back" href="../../problem-map/index.html?group=ai&category=Security">← Back to Problem Map</a>
+<section class="problem-hero"><div><div class="problem-meta"><span class="meta-pill id">SEC04</span><span class="meta-pill">Security</span></div><h1>Once an MCP server, plugin, or skill is installed, how do we know it is still safe after an update?</h1><p class="problem-summary">AI extensions can change code, permissions, dependencies, or network behavior over time, so a component that was safe when installed may become risky later.</p></div></section>
+<div class="detail-stack">
+<section class="detail-section"><div class="detail-title"><span class="detail-num">01</span><h2>What's the problem?</h2></div><div class="detail-body"><p>AI extensions can change code, permissions, dependencies, or network behavior over time, so a component that was safe when installed may become risky later.</p></div></section>
+<section class="detail-section"><div class="detail-title"><span class="detail-num">02</span><h2>What do we need to know?</h2></div><div class="detail-body"><p class="section-explanation">Maintain an inventory of components, manifests, package provenance, permissions, versions, signatures, network destinations, and dependencies.</p><div class="data-split"><div class="data-box"><h3>Key inputs</h3><p>Component inventory, MCP/plugin/skill manifests, source/package metadata, permissions, versions, signatures, network destinations, dependency data</p></div><div class="data-box"><h3>Existing systems</h3><p>Plugin/MCP registry, package registry, IAM, SIEM</p></div></div></div></section>
+<section class="detail-section ai-angle"><div class="detail-title"><span class="detail-num">03</span><h2>What does AI change?</h2></div><div class="detail-body"><p>AI can help inspect semantic behavior and risky capability changes, but provenance, signing, version pinning, and permission checks should remain deterministic controls.</p></div></section>
+<section class="detail-section"><div class="detail-title"><span class="detail-num">04</span><h2>How do we solve it?</h2></div><div class="detail-body solution-detail"><p class="section-explanation">Register every component, verify source and signature, pin approved versions, review permissions, and re-check changes before upgrades are allowed.</p><div class="solution-core-block"><span class="solution-core-label">Solution Core</span><p class="solution-core">AI Component Inventory + Provenance/Signature Verification + Version Pinning + Permission Review + Semantic Risk Inspection</p></div></div></section>
+<div class="trio-row">
+<section class="detail-section"><div class="detail-title"><span class="detail-num">05</span><h2>What does AI do?</h2></div><div class="detail-body"><p>Analyze manifests, documentation, and changes for suspicious capability or behavior shifts.</p></div></section>
+<section class="detail-section"><div class="detail-title"><span class="detail-num">06</span><h2>What do people decide?</h2></div><div class="detail-body"><p>Approve trusted sources, acceptable permissions, and update policy.</p></div></section>
+<section class="detail-section detail-outcome"><div class="detail-title"><span class="detail-num">07</span><h2>What improves?</h2></div><div class="detail-body"><p>Reduce supply-chain risk from AI components that silently change after deployment.</p></div></section>
+</div></div>
+<nav class="problem-footer-nav" aria-label="Problem navigation">
+<a href="../SEC03/index.html">← SEC03　Once AI has tool access, can it be tricked into doing something it is allowed to do—but should not do now?</a>
+<a class="to-map" href="../../problem-map/index.html?group=ai&category=Security">Back to Problem Map</a>
+<a class="next" href="../SEC05/index.html">SEC05　If AI remembers something wrong once, can that bad memory keep becoming &#x27;true&#x27;? →</a>
+</nav></main>
+<script src="../../../data/problems.js"></script><script src="../../../data/extensions.js"></script><script src="../../../assets/js/site.js"></script>
+</body></html>

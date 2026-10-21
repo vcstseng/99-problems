@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SEC04 · MCP、Plugin、Skill 裝進來後，怎麼確認現在安全、更新後也安全？ — 99 Problems</title>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+</head>
+<body>
+<header class="site-header site-shell">
+  <a class="brand" href="../../../index.html">
+    <span class="brand-mark">99</span>
+    <span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span>
+  </a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="../../problem-map/index.html">問題地圖</a>
+    <a href="../../methodology/index.html">方法論</a>
+    <a class="lang" href="#" data-lang-toggle>中 / EN</a>
+  </nav>
+</header>
+
+<main class="problem-detail">
+  <a class="problem-back" href="../../problem-map/index.html?group=ai&category=Security">← 回問題地圖</a>
+
+  <section class="problem-hero">
+    <div>
+      <div class="problem-meta">
+        <span class="meta-pill id">SEC04</span>
+        <span class="meta-pill">安全</span>
+      </div>
+      <h1>MCP、Plugin、Skill 裝進來後，怎麼確認現在安全、更新後也安全？</h1>
+      <p class="problem-summary">第三方MCP、Plugin、Skill或Agent元件可能要求過度權限、連接不可信目的地，或在版本更新後改變Capability與Behavior，將新的Supply-Chain Risk帶入企業AI環境</p>
+    </div>
+  </section>
+
+  <div class="detail-stack">
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">01</span><h2>問題是什麼？</h2></div>
+      <div class="detail-body"><p>第三方MCP、Plugin、Skill或Agent元件可能要求過度權限、連接不可信目的地，或在版本更新後改變Capability與Behavior，將新的Supply-Chain Risk帶入企業AI環境</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">02</span><h2>需要知道什麼？</h2></div>
+      <div class="detail-body">
+        <p class="section-explanation">MCP、Plugin 或 Skill 是否安全，不能只看第一次安裝。要持續知道來源、版本、簽章、權限、網路目的地、依賴套件與每次更新改了什麼，才能確認更新後沒有偷偷擴權或改變行為。</p>
+        <div class="data-split">
+          <div class="data-box"><h3>主要資料</h3><p>Component Inventory、MCP/Plugin/Skill Manifests、Source/Package Metadata、Permissions、Versions、Signatures、Network Destinations與Dependency Data</p></div>
+          <div class="data-box"><h3>既有系統</h3><p>Plugin/MCP Registry、Package Registry、IAM、SIEM</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section ai-angle">
+      <div class="detail-title"><span class="detail-num">03</span><h2>AI 改變了什麼？</h2></div>
+      <div class="detail-body"><p>傳統Software Supply-Chain Controls仍是主要防線，但AI元件還包含自然語言Tool Description、Instructions與Agent可組合使用的Capabilities。語意分析可協助發現可疑描述與權限組合，但不能取代Allowlist、Version Pinning、Signature、Change Approval與Least Privilege。</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">04</span><h2>怎麼解？</h2></div>
+      <div class="detail-body solution-detail">
+        <p class="section-explanation">先建立公司允許使用的 AI Component Inventory，驗證來源、版本與簽章，並固定已核准版本。更新時自動比較權限、網路存取與能力差異，再把可疑的 Tool Description 或行為交給人工審查。</p>
+        <div class="solution-core-block">
+          <span class="solution-core-label">Solution Core</span>
+          <p class="solution-core">AI Component Inventory + Provenance/Signature Verification + Version Pinning + Permission Review + Semantic Risk Inspection</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="trio-row">
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">05</span><h2>AI 做什麼？</h2></div>
+        <div class="detail-body"><p>建立允許使用的AI Component Inventory，驗證來源、版本與簽章，固定核准版本並比較更新前後的Permissions、Network Access與Capabilities；語意分析輔助標示可疑Tool Description或Behavior供人工審查</p></div>
+      </section>
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">06</span><h2>人決定什麼？</h2></div>
+        <div class="detail-body"><p>核准可信供應商與Components、允許的Capabilities與Permissions，決定版本更新與部署政策；重大Capability或Permission變更必須重新核准</p></div>
+      </section>
+      <section class="detail-section detail-outcome">
+        <div class="detail-title"><span class="detail-num">07</span><h2>最後改善什麼？</h2></div>
+        <div class="detail-body"><p>降低第三方AI元件、惡意更新與過度權限成為企業攻擊入口的風險，並使元件變更具有可追溯的Approval與Provenance</p></div>
+      </section>
+    </div>
+  </div>
+
+  <nav class="problem-footer-nav" aria-label="問題導覽">
+    <a href="../SEC03/index.html">← SEC03　AI 有了工具權限後，會不會被騙去做「有權做、但現在不該做」的事？</a>
+    <a class="to-map" href="../../problem-map/index.html?group=ai&category=Security">回問題地圖</a>
+    <a class="next" href="../SEC05/index.html">SEC05　AI 如果記錯一次，會不會把錯誤或惡意內容一直當成真的？ →</a>
+  </nav>
+</main>
+
+<script src="../../../data/problems.js"></script>
+<script src="../../../data/extensions.js"></script>
+<script src="../../../assets/js/site.js"></script>
+</body>
+</html>

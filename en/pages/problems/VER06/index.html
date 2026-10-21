@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>VER06 · When AI says it is confident, should we believe that confidence? — 99 Problems</title><link rel="stylesheet" href="../../../assets/css/site.css"></head>
+<body>
+<header class="site-header site-shell"><a class="brand" href="../../../index.html"><span class="brand-mark">99</span><span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span></a><nav class="site-nav" aria-label="Primary"><a href="../../problem-map/index.html">Problem Map</a><a href="../../methodology/index.html">Methodology</a><a class="lang" href="#" data-lang-toggle>中 / EN</a></nav></header>
+<main class="problem-detail">
+<a class="problem-back" href="../../problem-map/index.html?group=ai&category=Reliability%20%26%20Verification">← Back to Problem Map</a>
+<section class="problem-hero"><div><div class="problem-meta"><span class="meta-pill id">VER06</span><span class="meta-pill">Reliability &amp; Verification</span></div><h1>When AI says it is confident, should we believe that confidence?</h1><p class="problem-summary">Model self-confidence often does not correspond reliably to real-world correctness, especially across different task types and data conditions.</p></div></section>
+<div class="detail-stack">
+<section class="detail-section"><div class="detail-title"><span class="detail-num">01</span><h2>What's the problem?</h2></div><div class="detail-body"><p>Model self-confidence often does not correspond reliably to real-world correctness, especially across different task types and data conditions.</p></div></section>
+<section class="detail-section"><div class="detail-title"><span class="detail-num">02</span><h2>What do we need to know?</h2></div><div class="detail-body"><p class="section-explanation">Use retrieval quality, evidence completeness, source agreement, verifier results, repeated samples, historical error rates, task labels, and distribution signals.</p><div class="data-split"><div class="data-box"><h3>Key inputs</h3><p>Retrieval quality, evidence completeness, source agreement, verifier results, repeated-sample results, historical error rates, task labels, distribution signals</p></div><div class="data-box"><h3>Existing systems</h3><p>Agent platform, evaluation store, RAG, monitoring</p></div></div></div></section>
+<section class="detail-section ai-angle"><div class="detail-title"><span class="detail-num">03</span><h2>What does AI change?</h2></div><div class="detail-body"><p>Useful uncertainty comes from observable evidence quality and calibrated task performance, not from how certain the model sounds.</p></div></section>
+<section class="detail-section"><div class="detail-title"><span class="detail-num">04</span><h2>How do we solve it?</h2></div><div class="detail-body solution-detail"><p class="section-explanation">Build task-specific confidence signals from evidence completeness, disagreement, verifier results, and historical error patterns, then calibrate them against outcomes.</p><div class="solution-core-block"><span class="solution-core-label">Solution Core</span><p class="solution-core">Observable Uncertainty Signals + Task-Specific Calibration + Evidence Quality + Disagreement Analysis</p></div></div></section>
+<div class="trio-row">
+<section class="detail-section"><div class="detail-title"><span class="detail-num">05</span><h2>What does AI do?</h2></div><div class="detail-body"><p>Aggregate uncertainty signals and identify cases where evidence is incomplete or conflicting.</p></div></section>
+<section class="detail-section"><div class="detail-title"><span class="detail-num">06</span><h2>What do people decide?</h2></div><div class="detail-body"><p>Set thresholds for action, review, and abstention based on task risk.</p></div></section>
+<section class="detail-section detail-outcome"><div class="detail-title"><span class="detail-num">07</span><h2>What improves?</h2></div><div class="detail-body"><p>Make confidence more predictive of when AI should be trusted, challenged, or stopped.</p></div></section>
+</div></div>
+<nav class="problem-footer-nav" aria-label="Problem navigation">
+<a href="../VER05/index.html">← VER05　If another AI is doing the grading, who verifies the judge?</a>
+<a class="to-map" href="../../problem-map/index.html?group=ai&category=Reliability%20%26%20Verification">Back to Problem Map</a>
+<a class="next" href="../VER07/index.html">VER07　It worked yesterday. After a model, prompt, or tool change, how did it quietly break today? →</a>
+</nav></main>
+<script src="../../../data/problems.js"></script><script src="../../../data/extensions.js"></script><script src="../../../assets/js/site.js"></script>
+</body></html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DEV07 · 每個模組都測試通過，合起來為什麼還是壞？ — 99 Problems</title>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+</head>
+<body>
+<header class="site-header site-shell">
+  <a class="brand" href="../../../index.html">
+    <span class="brand-mark">99</span>
+    <span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span>
+  </a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="../../problem-map/index.html">問題地圖</a>
+    <a href="../../methodology/index.html">方法論</a>
+    <a class="lang" href="#" data-lang-toggle>中 / EN</a>
+  </nav>
+</header>
+
+<main class="problem-detail">
+  <a class="problem-back" href="../../problem-map/index.html?group=ai&category=AI-Native%20Development">← 回問題地圖</a>
+
+  <section class="problem-hero">
+    <div>
+      <div class="problem-meta">
+        <span class="meta-pill id">DEV07</span>
+        <span class="meta-pill">AI 原生開發</span>
+      </div>
+      <h1>每個模組都測試通過，合起來為什麼還是壞？</h1>
+      <p class="problem-summary">AI產生或修改的各個模組可能各自符合Local Tests，卻違反跨系統API/Schema Contract、Consumer Expectations或End-to-End Business Behavior，形成Local Success、Global Failure</p>
+    </div>
+  </section>
+
+  <div class="detail-stack">
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">01</span><h2>問題是什麼？</h2></div>
+      <div class="detail-body"><p>AI產生或修改的各個模組可能各自符合Local Tests，卻違反跨系統API/Schema Contract、Consumer Expectations或End-to-End Business Behavior，形成Local Success、Global Failure</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">02</span><h2>需要知道什麼？</h2></div>
+      <div class="detail-body">
+        <p class="section-explanation">單一模組 Test 全綠，不代表跨服務整合一定正確。需要 API、Schema、Consumer Expectation、Service Dependency、Integration／E2E Test 與同一批 Change Set，才能知道接口和實際 User Journey 是否一致。</p>
+        <div class="data-split">
+          <div class="data-box"><h3>主要資料</h3><p>APIs、Schemas、Interface Contracts、Consumer Expectations、Integration/E2E Tests、Service Dependencies與Change Sets</p></div>
+          <div class="data-box"><h3>既有系統</h3><p>API Gateway、Git、CI/CD、Service Catalog、Contract Testing Tools</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section ai-angle">
+      <div class="detail-title"><span class="detail-num">03</span><h2>AI 改變了什麼？</h2></div>
+      <div class="detail-body"><p>Contract Testing、Schema Compatibility與End-to-End Testing已是成熟的Deterministic Controls；AI的增量不是取代這些Tests，而是從Requirements與多個Change Sets找出可能的Semantic Mismatch、產生Cross-Component Scenarios並發現Integration Coverage Gaps。</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">04</span><h2>怎麼解？</h2></div>
+      <div class="detail-body solution-detail">
+        <p class="section-explanation">先用 Schema Compatibility 和 Contract Test 檢查可形式化的 Interface，再分析跨 Component 變更找可能的語意衝突與缺漏情境。最後用 Integration／E2E Test 驗證真正重要的端到端流程。</p>
+        <div class="solution-core-block">
+          <span class="solution-core-label">Solution Core</span>
+          <p class="solution-core">Contract Testing + Schema Compatibility + AI-Assisted Integration Scenario Generation + End-to-End Verification</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="trio-row">
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">05</span><h2>AI 做什麼？</h2></div>
+        <div class="detail-body"><p>先以Schema與Consumer-Driven Contract Tests驗證可形式化的Interface Compatibility，再由AI分析跨Component Changes與Requirements，提出可能的Semantic Conflicts與Missing Integration Scenarios，最後以Integration/E2E Tests驗證Critical User Journeys</p></div>
+      </section>
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">06</span><h2>人決定什麼？</h2></div>
+        <div class="detail-body"><p>定義Cross-System Invariants、Authoritative Contracts與Critical User Journeys，判斷Semantic Differences是否屬於真正Defect並決定Release-Blocking Integration Issues</p></div>
+      </section>
+      <section class="detail-section detail-outcome">
+        <div class="detail-title"><span class="detail-num">07</span><h2>最後改善什麼？</h2></div>
+        <div class="detail-body"><p>降低各模組Local Tests全部通過卻在整體系統產生Integration Failure的風險，讓Cross-System Behavior在Release前得到獨立驗證</p></div>
+      </section>
+    </div>
+  </div>
+
+  <nav class="problem-footer-nav" aria-label="問題導覽">
+    <a href="../DEV06/index.html">← DEV06　十個 Coding Agent 同時工作，怎麼確保不是各自做對、合起來做錯？</a>
+    <a class="to-map" href="../../problem-map/index.html?group=ai&category=AI-Native%20Development">回問題地圖</a>
+    <a class="next" href="../DEV09/index.html">DEV09　AI 產生的變更，可以自己一路上線到正式環境嗎？ →</a>
+  </nav>
+</main>
+
+<script src="../../../data/problems.js"></script>
+<script src="../../../data/extensions.js"></script>
+<script src="../../../assets/js/site.js"></script>
+</body>
+</html>

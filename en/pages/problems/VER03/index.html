@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>VER03 · AI took many steps. Which step failed, and how far did the error spread? — 99 Problems</title><link rel="stylesheet" href="../../../assets/css/site.css"></head>
+<body>
+<header class="site-header site-shell"><a class="brand" href="../../../index.html"><span class="brand-mark">99</span><span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span></a><nav class="site-nav" aria-label="Primary"><a href="../../problem-map/index.html">Problem Map</a><a href="../../methodology/index.html">Methodology</a><a class="lang" href="#" data-lang-toggle>中 / EN</a></nav></header>
+<main class="problem-detail">
+<a class="problem-back" href="../../problem-map/index.html?group=ai&category=Reliability%20%26%20Verification">← Back to Problem Map</a>
+<section class="problem-hero"><div><div class="problem-meta"><span class="meta-pill id">VER03</span><span class="meta-pill">Reliability &amp; Verification</span></div><h1>AI took many steps. Which step failed, and how far did the error spread?</h1><p class="problem-summary">Multi-step agents can propagate one bad intermediate state into many downstream actions, making the final failure hard to localize.</p></div></section>
+<div class="detail-stack">
+<section class="detail-section"><div class="detail-title"><span class="detail-num">01</span><h2>What's the problem?</h2></div><div class="detail-body"><p>Multi-step agents can propagate one bad intermediate state into many downstream actions, making the final failure hard to localize.</p></div></section>
+<section class="detail-section"><div class="detail-title"><span class="detail-num">02</span><h2>What do we need to know?</h2></div><div class="detail-body"><p class="section-explanation">Capture every agent step, intermediate output, state transition, tool result, business invariant, dependency link, and downstream action.</p><div class="data-split"><div class="data-box"><h3>Key inputs</h3><p>Agent steps, intermediate outputs, state transitions, tool results, business invariants, dependency/execution graph, downstream actions, business impact</p></div><div class="data-box"><h3>Existing systems</h3><p>Agent platform, workflow engine, logs, event store, CMDB</p></div></div></div></section>
+<section class="detail-section ai-angle"><div class="detail-title"><span class="detail-num">03</span><h2>What does AI change?</h2></div><div class="detail-body"><p>End-result testing alone is insufficient for long workflows. Intermediate states need explicit verification and dependency tracing.</p></div></section>
+<section class="detail-section"><div class="detail-title"><span class="detail-num">04</span><h2>How do we solve it?</h2></div><div class="detail-body solution-detail"><p class="section-explanation">Check critical invariants at intermediate steps, build an execution dependency graph, and trace which downstream actions depend on the first bad state.</p><div class="solution-core-block"><span class="solution-core-label">Solution Core</span><p class="solution-core">Intermediate-State Verification + Deterministic Invariants + Execution Dependency Graph + Error Propagation Analysis</p></div></div></section>
+<div class="trio-row">
+<section class="detail-section"><div class="detail-title"><span class="detail-num">05</span><h2>What does AI do?</h2></div><div class="detail-body"><p>Summarize execution paths, locate anomalous transitions, and estimate propagation paths.</p></div></section>
+<section class="detail-section"><div class="detail-title"><span class="detail-num">06</span><h2>What do people decide?</h2></div><div class="detail-body"><p>Define critical invariants and decide containment or recovery when an error crosses business boundaries.</p></div></section>
+<section class="detail-section detail-outcome"><div class="detail-title"><span class="detail-num">07</span><h2>What improves?</h2></div><div class="detail-body"><p>Diagnose failures faster and contain the impact before errors cascade further.</p></div></section>
+</div></div>
+<nav class="problem-footer-nav" aria-label="Problem navigation">
+<a href="../VER02/index.html">← VER02　If AI calculates a number, is recalculating it once enough? What if the formula or definition was wrong?</a>
+<a class="to-map" href="../../problem-map/index.html?group=ai&category=Reliability%20%26%20Verification">Back to Problem Map</a>
+<a class="next" href="../VER05/index.html">VER05　If another AI is doing the grading, who verifies the judge? →</a>
+</nav></main>
+<script src="../../../data/problems.js"></script><script src="../../../data/extensions.js"></script><script src="../../../assets/js/site.js"></script>
+</body></html>

@@ -1,0 +1,12 @@
+99 Problems — Bilingual Build v1
+
+Chinese version
+- Existing Chinese HTML, CSS, problem data, wording, and layout are preserved.
+- The only existing file changed is assets/js/site.js so the already-present 中 / EN control now switches languages.
+
+English version
+- Full Home, Problem Map, Methodology, and all 99 Problem Detail pages are under /en.
+- English copy is rewritten for business readability rather than mechanically translated.
+- Context Explanation is used in section 02.
+- Solution Explanation is used in section 04.
+- IDs, counts, grouping, and Solution Core remain aligned with the Chinese version.

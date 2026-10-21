@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>VER01 · AI 產生的答案、分析和報告，到底真的有證據支持嗎？ — 99 Problems</title>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+</head>
+<body>
+<header class="site-header site-shell">
+  <a class="brand" href="../../../index.html">
+    <span class="brand-mark">99</span>
+    <span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span>
+  </a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="../../problem-map/index.html">問題地圖</a>
+    <a href="../../methodology/index.html">方法論</a>
+    <a class="lang" href="#" data-lang-toggle>中 / EN</a>
+  </nav>
+</header>
+
+<main class="problem-detail">
+  <a class="problem-back" href="../../problem-map/index.html?group=ai&category=Reliability%20%26%20Verification">← 回問題地圖</a>
+
+  <section class="problem-hero">
+    <div>
+      <div class="problem-meta">
+        <span class="meta-pill id">VER01</span>
+        <span class="meta-pill">可靠性與驗證</span>
+      </div>
+      <h1>AI 產生的答案、分析和報告，到底真的有證據支持嗎？</h1>
+      <p class="problem-summary">AI產生的答案、分析與報告可能附有來源卻仍引用錯誤、超出Evidence能支持的範圍，或讓AI衍生內容在失去原始Provenance後被後續系統誤當成權威事實</p>
+    </div>
+  </section>
+
+  <div class="detail-stack">
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">01</span><h2>問題是什麼？</h2></div>
+      <div class="detail-body"><p>AI產生的答案、分析與報告可能附有來源卻仍引用錯誤、超出Evidence能支持的範圍，或讓AI衍生內容在失去原始Provenance後被後續系統誤當成權威事實</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">02</span><h2>需要知道什麼？</h2></div>
+      <div class="detail-body">
+        <p class="section-explanation">AI 產生報告或分析時，要能看見每個重要主張用了哪些來源、引用片段是否真的存在、來源本身是否可信，以及內容是原始資料還是 AI 再加工的結果。</p>
+        <div class="data-split">
+          <div class="data-box"><h3>主要資料</h3><p>AI Responses、Analysis/Report Outputs、Retrieved Sources、Citations、Source Authority、Original/Derived Content Labels與Data Lineage</p></div>
+          <div class="data-box"><h3>既有系統</h3><p>RAG、DMS、Search、DWH/BI、Data Catalog/Lineage、LLM Logs</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section ai-angle">
+      <div class="detail-title"><span class="detail-num">03</span><h2>AI 改變了什麼？</h2></div>
+      <div class="detail-body"><p>LLM擅長整合非結構化Evidence，但「有Citation」不代表Claim真的被支持；AI可協助Claim–Evidence語意比對，但Citation存在性、來源真實性與Source Authority仍需獨立驗證，AI衍生內容也不能在沒有Provenance的情況下悄悄變成新的權威Evidence。</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">04</span><h2>怎麼解？</h2></div>
+      <div class="detail-body solution-detail">
+        <p class="section-explanation">先驗證 Citation 與原始片段，再逐項檢查重要 Claim 是否真的被 Evidence 支持、是否超出來源內容。所有衍生內容都保留來源鏈，讓人能一路追回原始證據。</p>
+        <div class="solution-core-block">
+          <span class="solution-core-label">Solution Core</span>
+          <p class="solution-core">Source Authority + Citation Verification + Claim–Evidence Entailment + Provenance &amp; Derived-Content Labeling</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="trio-row">
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">05</span><h2>AI 做什麼？</h2></div>
+        <div class="detail-body"><p>先確認Citation與引用片段確實存在並保留原始來源，再檢查重要Claim是否被Evidence支持、是否超出來源內容；標記Original Source與AI-Derived Content，讓後續AI或人員能追溯每項重要主張的Evidence Chain</p></div>
+      </section>
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">06</span><h2>人決定什麼？</h2></div>
+        <div class="detail-body"><p>定義Authoritative Sources與Source Hierarchy，處理Evidence Conflict，並對高影響商業結論判斷現有Evidence是否足以支持決策</p></div>
+      </section>
+      <section class="detail-section detail-outcome">
+        <div class="detail-title"><span class="detail-num">07</span><h2>最後改善什麼？</h2></div>
+        <div class="detail-body"><p>降低Hallucination、Citation Laundering與無證據推論，避免AI衍生內容經反覆引用後被誤認為原始事實，提高分析與報告的可查證性</p></div>
+      </section>
+    </div>
+  </div>
+
+  <nav class="problem-footer-nav" aria-label="問題導覽">
+    <a href="../GOV08/index.html">← GOV08　AI 出錯了，最後到底誰負責？那個人真的有能力阻止它嗎？</a>
+    <a class="to-map" href="../../problem-map/index.html?group=ai&category=Reliability%20%26%20Verification">回問題地圖</a>
+    <a class="next" href="../VER02/index.html">VER02　AI 算出來的數字，重算一次就夠了嗎？如果公式或資料定義一開始就錯呢？ →</a>
+  </nav>
+</main>
+
+<script src="../../../data/problems.js"></script>
+<script src="../../../data/extensions.js"></script>
+<script src="../../../assets/js/site.js"></script>
+</body>
+</html>
