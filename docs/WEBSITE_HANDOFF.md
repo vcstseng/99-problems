@@ -41,3 +41,13 @@
 4. 後續修改完成後確認中英文、手機版與連結，再提交、上傳，等 Pages 部署完成並確認線上內容。
 
 今天沒有待執行的程式或阻礙。明天接續是交接方向，不代表已建立提醒或排程。
+## 最後清理紀錄（2026-10-26）
+
+已將 C:\Users\User\Documents\ChatGPT\agent group 內本次產生的 12 個暫存檔移至 Windows 資源回收筒，未永久刪除，可還原；共 337,017 bytes（約 329 KiB）。已確認這 12 個檔案在原目錄均不存在。
+
+- 8 個一次性腳本：add_practice_page.py、check_f03_website.py、check_framework.py、check_practice_page.py、check_refined_copy.py、position_framework.py、refine_website_copy.py、update_f03_website.py。
+- 4 張預覽截圖：f03-website-preview.png、framework-home-preview.png、practice-website-preview.png、refined-home-preview.png。
+- 保留正式 Website、D:\consulting-agent-group、原始資料、交接文件與 Git 歷史；舊網站副本、ZIP、簡報與試算表用途未確認，因此未刪除。
+- 此次清理不影響 GitHub 或正式網站。舊對話中的本機截圖連結可能不再有效，需從資源回收筒還原才能再次開啟。
+
+今日網站工作與清理均已完成，明天依上述交接方向繼續。
