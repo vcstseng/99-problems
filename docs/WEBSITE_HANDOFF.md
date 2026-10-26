@@ -130,3 +130,14 @@
 - Last full backend regression remains 280 passed after the earlier repair. This milestone ran the three new probes, not a new full regression.
 - Checks: six changed HTML pages parsed, IDs unique, local asset/anchor links resolve, two new JSON evidence files parse with no local trace paths, bilingual maturity counts preserved; git diff --check. Browser visual/mobile checks not performed in this publication.
 - User requested notification at this milestone. Report completion before deciding a new feature; keep future tests simple and evidence-led.
+
+
+## 2026-10-27 — final bilingual editorial pass
+
+- Reviewed and polished the complete Chinese/English Future Roadmap. Vision remains first; all seven phases and six substantive fields per phase are retained. Chinese headings and governance terminology are localized; English phrasing is clarified.
+- Added current-work evidence: simple similar-context reuse in CS02, E93 and CS07. Preserve the distinction between human-led improvements, deterministic adapter reuse and unproven autonomous evolution. Stops/denials are not resolution, and formal Problem X stays reserved.
+- Phase one continues to accumulate evidence; only phase two dynamic planning is deferred pending demonstrated need. Later phases remain long-term research. No dates promised, percentages, new capabilities or engine changes.
+- Clarified that problem-dependent changes are research scope rather than all being implemented. Updated date to 2026-10-27. Corrected an ambiguous English CS07 sentence to explicitly state no external model call or support action occurred.
+- Actual browser QA: 10 bilingual roadmap/practice/CS02/E93/CS07 pages, 22 viewport checks; roadmap at 1280/768/390px, other pages at 1280/390px. No horizontal overflow, duplicate IDs, JavaScript errors or local HTTP failures. 92 local link/asset/anchor URLs checked.
+- Both roadmap languages have 7 phases and 42 substantive description fields. Deferred appears only in phase two status. Production-path-prefix language switching preserves query and phase anchor in both directions. No images, diagrams or new dependencies added.
+- Reviewed desktop/mobile screenshots. Existing styling and navigation retained. These checks are not a formal accessibility audit, human usability study or full-browser compatibility test. Prior backend regression remains 280 passed; no backend test rerun for this copy-only update.
