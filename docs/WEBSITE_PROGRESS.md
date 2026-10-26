@@ -95,3 +95,14 @@
 - Preserve prior date-context failure and distinguish repaired-case retest from this new scenario. Prior full regression 280 passed; not rerun this round.
 - Continue testing simple similar contexts and recording actual gaps; do not deliberately complicate problems or add Planner without evidence. UI styling, maturity and 94/4/1 counts unchanged.
 - Checks: both HTML files parsed, new IDs unique and evidence links resolve; public JSON parses and contains no local trace paths. No browser visual or mobile verification performed this round.
+
+
+## 2026-10-27 — three-capability simple-context reuse milestone
+
+- CS02, E93 and CS07 each completed a frozen similar-context probe; no new engine capabilities or deliberate problem complexity. Added bilingual E93/CS07 bounded findings, public synthetic evidence and a collapsible Practice milestone summary.
+- Direct-reuse conditions: 2/2 per context. Boundary expectations: CS02 2/2, E93 1/1, CS07 4/4. Related variants are not independent transfer trials; correct denials/stops are not solved problems. Preserve prior CS02 date failure and separate repair.
+- E93: shared-source/opposition/unknown handling; source modification blocks old acceptance. CS07: version/date/role/account/ambiguity filtering; synthetic restricted content absent from result payloads.
+- Same-author, source-exposed, deterministic adapters and Mock Lead. Not blind, full seven-gate validation, production security or real business success. Formal Problem X reserved. Existing 94/4/1 counts unchanged.
+- Last full backend regression remains 280 passed after the earlier repair. This milestone ran the three new probes, not a new full regression.
+- Checks: six changed HTML pages parsed, IDs unique, local asset/anchor links resolve, two new JSON evidence files parse with no local trace paths, bilingual maturity counts preserved; git diff --check. Browser visual/mobile checks not performed in this publication.
+- User requested notification at this milestone. Report completion before deciding a new feature; keep future tests simple and evidence-led.
