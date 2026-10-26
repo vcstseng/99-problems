@@ -83,8 +83,14 @@
   </div>
 
 
+<!-- e93-experiment:start -->
+<div class="detail-stack" id="e93-experiment">
+<section class="detail-section"><div class="detail-title"><span class="detail-num">08</span><h2>實驗：相同答案，不等於獨立證據</h2></div><div class="detail-body solution-detail"><p><strong>限定的來源相依查核通過；自主 Agent 團隊能力仍未證明。</strong>十份合成報告雖然同意同一結論，卻都透過轉載與摘要追到同一原始來源。十份報告，不代表十份獨立支持的判斷。</p><div class="data-box"><h3>10 份報告 → 共用轉載與摘要 → 1 個已揭露原始來源</h3><p>查核的是可見來源關係，未知的相依仍保留；即使根來源不同，也不能直接推論統計獨立或內容為真。</p></div><details><summary>哪裡失敗？後來改了什麼？</summary><p>未改動的原始工具清單無法執行來源相依查核，首次準備失敗已保留。補上受限來源追溯工具及另一套程式驗證後，用同一版流程與標準重新測試，沒有降低門檻。</p></details></div></section>
+<section class="detail-section"><div class="detail-title"><span class="detail-num">09</span><h2>驗證整個流程，不只看答案</h2></div><div class="detail-body solution-detail"><p>先凍結問題與標準 → 確認準備 → 分析 → 挑錯 → 重驗 → 對精確版本決策 → 帶限制交付。缺證據就停止推進；中途改標準會讓原 run 失效，不把失敗改成成功。</p><details><summary>檢查與證據</summary><p>八種合成情境涵蓋共用與不同根來源、上游報告、矛盾證據、缺漏、循環引用、來源指令與無關來源。新增 25 項檢查、完整 249 項回歸通過；這是程式與流程檢查，不是獨立模型或商業成效驗證。</p><p>另測退回重驗與重試上限、過期決策、停止後恢復、來源改動攔截。本次主要接受 run 只有一版分析，未發生實際退回；退回路徑由另外的控制測試驗證。</p><p><a href="../../../data/consulting/E93/experiment.json">實驗紀錄與限制 JSON</a> · <a href="../../../data/consulting/E93/source.json">合成來源圖</a> · <a href="../../../data/consulting/E93/protocol.json">凍結驗收標準</a></p></details><p>分析由確定性工具執行，角色審查由同一助手完成；不是盲測，也不是多個隔離 AI 互相挑錯。隱藏相依、獨立推理、真實證據與商業成效仍未證明。</p></div></section>
+</div>
+<!-- e93-experiment:end -->
 <!-- framework-problem:start -->
-<div class="detail-stack"><section class="detail-section" id="framework-approach"><div class="detail-title"><h2>這個問題如何透過 Agent Framework 處理？</h2></div><div class="detail-body solution-detail"><p data-case-maturity="problem_outline"><strong>目前進度：問題與解題方向</strong><br>仍需依實際需求確認資料與範圍，完成個案方案及成效驗證。</p><p>先釐清決策與證據需求，再組合顧問 Skills 與允許的 Tools，透過人機協作、安全邊界與治理審查形成方案。框架提供共用方法，不代表本題所有能力都已實作或成果已驗證。</p><p><a href="../../practice/index.html#agent-framework">了解共用解題框架 →</a></p><p><a href="https://www.linkedin.com/in/vincent-tseng-5aa8b832/" data-consulting-contact target="_blank" rel="noopener noreferrer">在 LinkedIn 討論這個問題 ↗</a></p><p>可先提供 E93 題號、情境與想做的決策；初次聯絡以概況為主，不必提供機密資料。</p></div></section></div>
+<div class="detail-stack"><section class="detail-section" id="framework-approach"><div class="detail-title"><h2>這個問題如何透過 Agent Framework 處理？</h2></div><div class="detail-body solution-detail"><p data-case-maturity="evidence_audit_demo"><strong>目前進度：來源相依查核示範 · 合成證據</strong><br>限定的來源與流程檢查已通過；不代表完整 E93 解決或自主 Agent 能力已被證明。</p><p>先釐清決策與證據需求，再組合顧問 Skills 與允許的 Tools，透過人機協作、安全邊界與治理審查形成方案。框架提供共用方法，不代表本題所有能力都已實作或成果已驗證。</p><p><a href="../../practice/index.html#agent-framework">了解共用解題框架 →</a></p><p><a href="https://www.linkedin.com/in/vincent-tseng-5aa8b832/" data-consulting-contact target="_blank" rel="noopener noreferrer">在 LinkedIn 討論這個問題 ↗</a></p><p>可先提供 E93 題號、情境與想做的決策；初次聯絡以概況為主，不必提供機密資料。</p></div></section></div>
 <!-- framework-problem:end -->
 <nav class="problem-footer-nav" aria-label="問題導覽">
     <a href="../COL08/index.html">← COL08　AI 讓每個人產出變多之後，原本的 KPI 還有意義嗎？</a>
