@@ -1,0 +1,11 @@
+/* Scoped to the Framework diagram; existing site styles are unchanged. */
+.framework-flow{margin:0;padding:18px;background:var(--soft,#f1efe9);border:1px solid var(--line);min-width:0}
+.framework-flow ol{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;list-style:none;margin:0;padding:0}
+.framework-flow li{min-width:0;padding:14px;background:var(--paper,#fbfaf6);border:1px solid var(--line)}
+.framework-flow li span{display:block;font-size:12px;color:var(--muted);margin-bottom:8px}
+.framework-flow li strong{display:block;font-size:16px;line-height:1.5}
+.framework-flow li p{font-size:13px;line-height:1.6;margin:8px 0 0}
+.framework-flow .framework-guardrails{margin:12px 0 0;padding:12px;border-top:1px solid var(--line);font-size:14px;line-height:1.7}
+.framework-flow figcaption{margin-top:10px;color:var(--muted);font-size:12px;line-height:1.6}
+@media(max-width:900px){.framework-flow ol{grid-template-columns:repeat(2,minmax(0,1fr))}.framework-flow li:last-child{grid-column:1/-1}}
+@media(max-width:520px){.framework-flow{padding:12px}.framework-flow ol{grid-template-columns:1fr}.framework-flow li:last-child{grid-column:auto}}
