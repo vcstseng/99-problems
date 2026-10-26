@@ -1,0 +1,16 @@
+/* Roadmap-only reading layout. No existing site styling is overridden. */
+#roadmap-content .page-head p{line-height:1.8}
+#roadmap-content .roadmap-toc{padding:22px 0;border-bottom:1px solid var(--line)}
+#roadmap-content .roadmap-toc h2{font-size:18px;margin:0 0 12px}
+#roadmap-content .roadmap-toc ul{display:flex;flex-wrap:wrap;gap:10px 24px;list-style:none;padding:0;margin:0;font-size:14px}
+#roadmap-content .roadmap-toc a{text-decoration:underline;text-underline-offset:4px}
+#roadmap-content section[id]{scroll-margin-top:24px}
+#roadmap-content .detail-title h3{margin:0;font-size:22px;line-height:1.4}
+#roadmap-content .roadmap-status{margin:0 0 18px 41px;line-height:2}
+#roadmap-content .meta-pill{display:inline-block;white-space:normal;line-height:1.5}
+#roadmap-content .roadmap-stage dl{margin:0 0 0 41px;display:grid;gap:16px;font-size:15px;line-height:1.8}
+#roadmap-content .roadmap-stage dt{font-weight:700}
+#roadmap-content .roadmap-stage dd{margin:3px 0 0;color:var(--muted)}
+#roadmap-content .data-box ul{padding-left:20px;font-size:14px;line-height:1.8;margin-bottom:0}
+#roadmap-content .roadmap-return{margin-top:28px}
+@media(max-width:680px){#roadmap-content .roadmap-stage dl,#roadmap-content .roadmap-status{margin-left:0}#roadmap-content .detail-title h3{font-size:20px}}

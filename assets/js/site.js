@@ -16,8 +16,9 @@ function getProblem(id){ return (window.PROBLEMS||[]).find(p=>p.ID===id); }
   $$('[data-lang-toggle]').forEach(el=>el.addEventListener('click',e=>{
     e.preventDefault();
     const target=new URL(targetRel || (isEnglish?'index.html':'en/index.html'), siteRoot);
-    target.search=here.search;
-    target.hash=here.hash;
+    const currentUrl=new URL(location.href);
+    target.search=currentUrl.search;
+    target.hash=currentUrl.hash;
     location.href=target.href;
   }));
 })();
