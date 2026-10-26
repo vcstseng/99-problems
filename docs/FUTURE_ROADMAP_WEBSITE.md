@@ -40,3 +40,13 @@
 - Actual browser QA: 10 bilingual roadmap/practice/CS02/E93/CS07 pages, 22 viewport checks; roadmap at 1280/768/390px, other pages at 1280/390px. No horizontal overflow, duplicate IDs, JavaScript errors or local HTTP failures. 92 local link/asset/anchor URLs checked.
 - Both roadmap languages have 7 phases and 42 substantive description fields. Deferred appears only in phase two status. Production-path-prefix language switching preserves query and phase anchor in both directions. No images, diagrams or new dependencies added.
 - Reviewed desktop/mobile screenshots. Existing styling and navigation retained. These checks are not a formal accessibility audit, human usability study or full-browser compatibility test. Prior backend regression remains 280 passed; no backend test rerun for this copy-only update.
+
+
+## 2026-10-27 — F03 follow-up stopping milestone
+
+- One simple packaging-cost context completed with unchanged engine capability. Added bilingual F03 follow-up, public synthetic evidence and a separate Practice milestone; preserved the earlier three-capability history. Roadmap current-work references now include F03.
+- Calculation/row-order conditions 2/2; missing-price/corrupted-total conditions 2/2. Delta 1180 = volume 700 + material price 480; changed source rejects old output. Tampered claim blocked at existing two-attempt limit; other conditions one attempt.
+- One context with an invariance check, not independent transfer trials. No causal proof, achieved savings, new complete proposal, real human approval, autonomous agent validation or full seven-gate run. Formal Problem X reserved; 94/4/1 maturity counts unchanged.
+- Last full engine regression remains 280 passed; only the new frozen probe was run, with no engine change. Same-author source-exposed synthetic fixture; stops are not business resolution.
+- Browser QA: 12 bilingual pages, 26 viewport checks, local asset/anchor links, no horizontal overflow or browser errors. Roadmap has 7 phases and 42 fields per language; language switching retains query and anchor. git diff --check passed. No new images or dependencies.
+- User requested stopping at the milestone: docs and website publication complete; notify the user and stop without starting another probe or feature.
