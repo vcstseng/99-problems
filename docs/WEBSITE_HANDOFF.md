@@ -100,3 +100,13 @@
 ## Future Roadmap（2026-10-26）
 
 新增 pages/roadmap/index.html 及完整英文對應，先呈現研究願景，再說明現況、七階段研究依賴、動態規劃的限定 Deferred、重啟訊號及進步／停止標準。全站選單加入入口，未改解題引擎。階段一持續累積基準，三至七是長期探索；整份 roadmap 不是暫停或承諾開發時程。內容與實際驗收見 docs/FUTURE_ROADMAP_WEBSITE.md。既有案例成熟度與 94／4／1 摘要不變；下一步仍依需求與證據，而非主動開發 Planner。
+
+## 2026-10-27 — CS02 reuse follow-up and local cleanup
+
+- Frozen reuse probe: 1/2 direct reuse cases passed; 4/4 escalation/stop expectations met. Boundary outcomes are not solved cases.
+- Failure: tool and verifier used different comparison dates. The host now passes explicit time to execution and verification; the hidden verifier default was removed.
+- Exposed-case retest: 2/2 direct reuse passed and 4/4 boundary expectations met, each in one attempt. Full backend regression: 280 passed. These are repaired known cases, not unseen generalization evidence or real business outcomes.
+- Original failure retained in local engine evidence. Engine checkpoints: 047ce0d (probe), 405df79 (repair), 467cec2 (cleanup documentation).
+- Removed local Python/test caches, an extracted package verified identical to the retained ZIP, and six temporary preview screenshots. No tracked website files were deleted; no corresponding remote deletions are pending.
+- Website maturity remains 94 problem outlines / 4 partial demonstrations / 1 conditional complete proposal. No new problem was solved, no UI/engine source was added to this repository, and no Planner was introduced. Formal Problem X remains reserved.
+- Repository boundary: this GitHub repository publishes the website and selected research records; the full engine and private/local traces remain in the separate local project.
