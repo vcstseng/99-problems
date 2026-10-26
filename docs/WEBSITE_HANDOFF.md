@@ -110,3 +110,12 @@
 - Removed local Python/test caches, an extracted package verified identical to the retained ZIP, and six temporary preview screenshots. No tracked website files were deleted; no corresponding remote deletions are pending.
 - Website maturity remains 94 problem outlines / 4 partial demonstrations / 1 conditional complete proposal. No new problem was solved, no UI/engine source was added to this repository, and no Planner was introduced. Formal Problem X remains reserved.
 - Repository boundary: this GitHub repository publishes the website and selected research records; the full engine and private/local traces remain in the separate local project.
+
+
+## 2026-10-27 — similar-context CS02 reuse evidence
+
+- Added bilingual CS02 follow-up and data/consulting/CS02/reuse-shift.json: one simple synthetic scenario, four conditions, unchanged engine capabilities.
+- Direct reuse 2/2; escalation/expiry expectations 2/2, each one attempt. Simulated acceptance/rejection and stop persistence checked. Not blind, not full seven-gate validation, not new problems solved; formal Problem X reserved.
+- Preserve prior date-context failure and distinguish repaired-case retest from this new scenario. Prior full regression 280 passed; not rerun this round.
+- Continue testing simple similar contexts and recording actual gaps; do not deliberately complicate problems or add Planner without evidence. UI styling, maturity and 94/4/1 counts unchanged.
+- Checks: both HTML files parsed, new IDs unique and evidence links resolve; public JSON parses and contains no local trace paths. No browser visual or mobile verification performed this round.
