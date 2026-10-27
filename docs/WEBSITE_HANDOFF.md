@@ -1,6 +1,6 @@
 # Website 收工與接續紀錄
 
-收工日期：2026-10-26（Asia/Taipei）。使用者決定今天正式收工，明天再繼續。
+**目前狀態：2026-10-27（Asia/Taipei）展示版本已凍結。** 最後整理、驗收與限制見 `WEBSITE_FREEZE_2026_10_27.md`。收到新的明確目標前，不主動擴充。下方較早日期為歷史紀錄。
 
 ## 專案位置與工作邊界
 
@@ -151,3 +151,11 @@
 - Last full engine regression remains 280 passed; only the new frozen probe was run, with no engine change. Same-author source-exposed synthetic fixture; stops are not business resolution.
 - Browser QA: 12 bilingual pages, 26 viewport checks, local asset/anchor links, no horizontal overflow or browser errors. Roadmap has 7 phases and 42 fields per language; language switching retains query and anchor. git diff --check passed. No new images or dependencies.
 - User requested stopping at the milestone: docs and website publication complete; notify the user and stop without starting another probe or feature.
+
+
+## 2026-10-27 — presentation freeze
+
+- Completed the final approved bilingual presentation pass: hero case CTA, representative case before framework detail, concise reuse summary and roadmap overview with expandable phases. Original 42 roadmap description fields per language and old milestone anchors retained.
+- Static checks: six edited pages, 118 local links/assets/anchors. Browser QA: 14 bilingual pages, 30 viewport checks, 120 local URLs, seven phase toggles per language, query/hash language switching, no overflow or browser errors. Reviewed desktop/mobile screenshots. No engine change; prior 280-test regression is historical, not rerun here.
+- Maturity/counts unchanged. See WEBSITE_FREEZE_2026_10_27.md for exact scope and limits. The website commit containing that file is the frozen presentation checkpoint.
+- User requested freeze after upload: do not start further case probes, features, redesign or Planner work without a new explicit user objective. Long-term roadmap remains research, not a promise or a blanket pause.

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Future Roadmap — 99 Problems</title><meta name="description" content="From fixed consulting teams to problem-driven processes and evolving capabilities: current evidence, seven research phases, security and governance."><link rel="stylesheet" href="../../assets/css/site.css"><link rel="stylesheet" href="../../../assets/css/roadmap.css"></head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Future Roadmap — 99 Problems</title><meta name="description" content="From fixed consulting teams to problem-driven processes and evolving capabilities: current evidence, seven research phases, security and governance."><link rel="stylesheet" href="../../assets/css/site.css"><link rel="stylesheet" href="../../../assets/css/roadmap.css"><link rel="stylesheet" href="../../../assets/css/presentation.css?v=freeze-20261027"></head>
 <body>
 <header class="site-header site-shell"><a class="brand" href="../../index.html"><span class="brand-mark">99</span><span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span></a>
 <nav class="site-nav" aria-label="Primary"><a href="../../pages/problem-map/index.html">Problem Map</a><a href="../../pages/methodology/index.html">Methodology</a><a href="../practice/index.html" data-solving-practice>Practice</a> <a href="../roadmap/index.html" data-future-roadmap aria-current="page">Future Roadmap</a> <a class="lang" href="#" data-lang-toggle>中 / EN</a>
@@ -13,6 +13,7 @@
 <p>This roadmap sets out a research direction and the evidence required to move forward. It does not claim autonomous evolution or promise delivery dates. The phases describe research dependencies; progress depends on demonstrated need and experimental results.</p>
 <p>Updated 2026-10-27 · Test existing capabilities; let evidence guide the next step</p>
 </section>
+<section class="presentation-overview" aria-labelledby="roadmap-overview"><h2 id="roadmap-overview">The roadmap at a glance</h2><ul><li><strong>Current evidence</strong>Bounded demonstrations and similar-context reuse checks. No demonstrated autonomous evolution.</li><li><strong>Next step</strong>Resume only when there is a concrete need or a gap worth testing.</li><li><strong>Dynamic planning</strong>Phase two is deferred pending evidence of need. Other phases remain research directions.</li></ul></section>
 <nav class="roadmap-toc" aria-label="On this page">
 <h2>On this page</h2>
 <ul>
@@ -39,7 +40,7 @@
 <p>99 Problems provides the research problem space; it does not mean the system can solve every problem. See <a href="../practice/index.html">Practice</a> for current cases and results. This page describes what we may investigate next and the evidence needed to proceed.</p><div class="data-box" id="current-evidence">
 <h3>Current work: test the process in simple, similar contexts</h3>
 <p>On 2026-10-27, similar-context probes were completed for CS02 ticket triage, E93 source-dependency auditing, CS07 authorized support lookup and F03 cost analysis. Each probe freezes existing capabilities, records acceptance criteria, then checks outputs and relevant controls. Failures are retained, with repairs and retests recorded separately. We do not deliberately make problems harder or add roles and tools first.</p>
-<p>These probes support bounded reuse. They do not establish four newly solved problems, independent blind evaluation or autonomous learning. Correct stopping, escalation and denial are not problem resolution. The next step remains testing similar contexts to identify actual gaps.</p>
+<p>These probes support bounded reuse. They do not establish four newly solved problems, independent blind evaluation or autonomous learning. Correct stopping, escalation and denial are not problem resolution. Further tests depend on a concrete need or an observed gap.</p>
 <p><a href="../practice/index.html#f03-reuse-milestone">See the reuse milestones and their limits →</a>
 </p></div></div>
 </section>
@@ -78,7 +79,7 @@
 <h3>Establish an empirical fixed-team baseline</h3></div>
 <p class="roadmap-status" data-phase-status="1"><span class="meta-pill">Ongoing baseline research</span>
 </p>
-<dl><div>
+<details class="roadmap-phase-details"><summary>Read the research question, checks and risks</summary><dl><div>
 <dt>Research question</dt>
 <dd>Where does the current system work, and which failures come from data, capability or process limits? Understand the baseline before assuming it should become dynamic.</dd></div><div>
 <dt>Expected behavior</dt>
@@ -91,13 +92,13 @@
 <dd>Easy synthetic cases, shared-context bias, or reporting only successes and test counts without costs or human effort.</dd></div><div>
 <dt>Concrete example</dt>
 <dd>A CS02 reuse probe found that the tool and verifier used different dates. The failure was retained, the host was changed to supply the same time explicitly, and the case was retested. A later similar context checked reuse. This was human-led improvement, not autonomous learning.</dd></div>
-</dl>
+</dl></details>
 </section>
 <section class="detail-section roadmap-stage" id="phase-2" data-research-phase="2"><div class="detail-title"><span class="detail-num">02</span>
 <h3>Problem-driven Process</h3></div>
 <p class="roadmap-status" data-phase-status="2"><span class="meta-pill">Deferred — pending evidence of need</span>
 </p>
-<dl><div>
+<details class="roadmap-phase-details"><summary>Read the research question, checks and risks</summary><dl><div>
 <dt>Research question</dt>
 <dd>With the same problem, data, capability pool and resource limits, can system-generated processes outperform a fair fixed workflow?</dd></div><div>
 <dt>Expected behavior</dt>
@@ -110,13 +111,13 @@
 <dd>A planner repeats branches already inside tools, depends on case-specific templates, weakens the baseline or hides planning costs.</dd></div><div>
 <dt>Concrete example</dt>
 <dd>Choosing source checks before calculations could matter if evidence conditions materially change later cost or quality. No such need has yet been established in the inspected cases.</dd></div>
-</dl>
+</dl></details>
 </section>
 <section class="detail-section roadmap-stage" id="phase-3" data-research-phase="3"><div class="detail-title"><span class="detail-num">03</span>
 <h3>Adaptive Roles &amp; Skills</h3></div>
 <p class="roadmap-status" data-phase-status="3"><span class="meta-pill">Long-term exploration</span>
 </p>
-<dl><div>
+<details class="roadmap-phase-details"><summary>Read the research question, checks and risks</summary><dl><div>
 <dt>Research question</dt>
 <dd>When process changes cannot meet recurring needs, does modifying or generating roles and skills create a verifiable new capability?</dd></div><div>
 <dt>Expected behavior</dt>
@@ -129,13 +130,13 @@
 <dd>Unbounded role proliferation, treating personas of one model as independent experts, or improving presentation without improving judgment.</dd></div><div>
 <dt>Concrete example</dt>
 <dd>A temporary policy-conflict review skill must find conflicts previously missed, not merely produce another policy summary.</dd></div>
-</dl>
+</dl></details>
 </section>
 <section class="detail-section roadmap-stage" id="phase-4" data-research-phase="4"><div class="detail-title"><span class="detail-num">04</span>
 <h3>Controlled Tool Generation</h3></div>
 <p class="roadmap-status" data-phase-status="4"><span class="meta-pill">Long-term exploration</span>
 </p>
-<dl><div>
+<details class="roadmap-phase-details"><summary>Read the research question, checks and risks</summary><dl><div>
 <dt>Research question</dt>
 <dd>When existing tools are demonstrably insufficient, can generating a narrow calculator, checker or simulator be safe and worthwhile?</dd></div><div>
 <dt>Expected behavior</dt>
@@ -148,13 +149,13 @@
 <dd>Treating executable code as trustworthy, shared assumptions between code and tests, dependency or access expansion, and long-lived maintenance for one-off scripts.</dd></div><div>
 <dt>Concrete example</dt>
 <dd>An unsupported cost formula may justify a narrow calculator, but it cannot validate itself or acquire permission to write to enterprise systems.</dd></div>
-</dl>
+</dl></details>
 </section>
 <section class="detail-section roadmap-stage" id="phase-5" data-research-phase="5"><div class="detail-title"><span class="detail-num">05</span>
 <h3>Institutional Memory &amp; Capability Lifecycle</h3></div>
 <p class="roadmap-status" data-phase-status="5"><span class="meta-pill">Long-term exploration</span>
 </p>
-<dl><div>
+<details class="roadmap-phase-details"><summary>Read the research question, checks and risks</summary><dl><div>
 <dt>Research question</dt>
 <dd>Which experiences and temporary capabilities should be retained, retrieved and reused, and when should they be retired?</dd></div><div>
 <dt>Expected behavior</dt>
@@ -167,13 +168,13 @@
 <dd>Contaminated or stale memories, unauthorized cross-client data reuse, and a growing library that makes selection harder rather than better.</dd></div><div>
 <dt>Concrete example</dt>
 <dd>The lesson that reposts do not constitute independent evidence can become a sourced verification rule. One client’s private policy must not automatically become a global rule.</dd></div>
-</dl>
+</dl></details>
 </section>
 <section class="detail-section roadmap-stage" id="phase-6" data-research-phase="6"><div class="detail-title"><span class="detail-num">06</span>
 <h3>Evidence-driven Evolution</h3></div>
 <p class="roadmap-status" data-phase-status="6"><span class="meta-pill">Long-term exploration</span>
 </p>
-<dl><div>
+<details class="roadmap-phase-details"><summary>Read the research question, checks and risks</summary><dl><div>
 <dt>Research question</dt>
 <dd>Can past execution results lead to verified changes that improve later cases excluded from the adjustment process?</dd></div><div>
 <dt>Expected behavior</dt>
@@ -186,13 +187,13 @@
 <dd>Overfitting evaluation sets, retaining only favorable results, moving the goalposts, or improving one domain while damaging another.</dd></div><div>
 <dt>Concrete example</dt>
 <dd>An adjustment prompted by a service failure should help later tickets not used to design it while preserving E93 source checks. Passing only the original ticket is not evolution.</dd></div>
-</dl>
+</dl></details>
 </section>
 <section class="detail-section roadmap-stage" id="phase-7" data-research-phase="7"><div class="detail-title"><span class="detail-num">07</span>
 <h3>Problem X — Transfer Beyond the Known Set</h3></div>
 <p class="roadmap-status" data-phase-status="7"><span class="meta-pill">Long-term exploration · formal Problem X reserved</span>
 </p>
-<dl><div>
+<details class="roadmap-phase-details"><summary>Read the research question, checks and risks</summary><dl><div>
 <dt>Research question</dt>
 <dd>Can accumulated methods and capabilities transfer to problems excluded from development, planner tuning and capability-selection design?</dd></div><div>
 <dt>Expected behavior</dt>
@@ -205,7 +206,7 @@
 <dd>Test contamination, indirect prior exposure, claiming original-system transfer after adding a new tool, or counting an appropriate stop as a solved problem.</dd></div><div>
 <dt>Concrete example</dt>
 <dd>For a new operations problem with sufficient data and existing capabilities, test recomposition. If essential data is absent, explain the gap rather than force a success narrative.</dd></div>
-</dl>
+</dl></details>
 </section></div>
 </section>
 <section class="detail-section" id="planning-status"><div class="detail-title">
